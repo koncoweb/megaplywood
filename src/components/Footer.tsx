@@ -17,7 +17,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 text-sm">
-              Distributor plywood terpercaya dengan kualitas tinggi dan harga kompetitif untuk kebutuhan konstruksi dan furniture.
+              Trusted plywood distributor with high quality and competitive prices for construction and furniture needs.
             </p>
           </div>
 
@@ -31,17 +31,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/sejarah" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/history" className="text-gray-300 hover:text-white transition-colors">
                   Plywood History
                 </Link>
               </li>
               <li>
-                <Link href="/produk" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/products" className="text-gray-300 hover:text-white transition-colors">
                   Our Products
                 </Link>
               </li>
               <li>
-                <Link href="/spesifikasi" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/specifications" className="text-gray-300 hover:text-white transition-colors">
                   Specifications
                 </Link>
               </li>
@@ -58,12 +58,12 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/tentang" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/kontak" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
                   Contact
                 </Link>
               </li>

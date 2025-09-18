@@ -2,12 +2,12 @@ import { Metadata } from 'next'
 import { Phone, Mail, MapPin, Clock, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Kontak - Hubungi MegaPlywood Indonesia untuk Konsultasi',
-  description: 'Hubungi MegaPlywood Indonesia untuk konsultasi produk plywood, request quote, atau informasi lebih lanjut. Tim customer service kami siap membantu 24/7.',
-  keywords: ['kontak megaplywood', 'customer service', 'konsultasi plywood', 'request quote', 'hubungi kami'],
+  title: 'Contact - Contact MegaPlywood Indonesia for Consultation',
+  description: 'Contact MegaPlywood Indonesia for plywood product consultation, request quote, or more information. Our customer service team is ready to help 24/7.',
+  keywords: ['contact megaplywood', 'customer service', 'plywood consultation', 'request quote', 'contact us'],
 }
 
-export default function KontakPage() {
+export default function ContactPage() {
   const contactInfo = [
     {
       icon: Phone,
@@ -30,7 +30,7 @@ export default function KontakPage() {
     {
       icon: Clock,
       title: 'Operating Hours',
-      details: ['Senin - Jumat: 08:00 - 17:00', 'Sabtu: 08:00 - 15:00', 'Minggu: Tutup'],
+      details: ['Monday - Friday: 08:00 - 17:00', 'Saturday: 08:00 - 15:00', 'Sunday: Closed'],
       description: 'Our team is ready to serve you'
     }
   ]
@@ -251,7 +251,7 @@ export default function KontakPage() {
               <div className="bg-gray-200 rounded-lg h-64 mb-6 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                  <p className="text-gray-600">Peta Lokasi</p>
+                  <p className="text-gray-600">Map Location</p>
                   <p className="text-sm text-gray-500">Jl. Industri Plywood No. 123, Jakarta Utara</p>
                 </div>
               </div>
@@ -268,12 +268,12 @@ export default function KontakPage() {
                 </ul>
               </div>
 
-              <div className="bg-green-50 rounded-lg p-6">
+              <div className="bg-gray-50 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   Showroom & Warehouse
                 </h3>
                 <p className="text-gray-700 mb-2">
-                  Visit our showroom untuk melihat produk langsung dan berkonsultasi dengan tim ahli.
+                  Visit our showroom to see products directly and consult with our expert team.
                 </p>
                 <ul className="space-y-1 text-gray-700">
                   <li>• Showroom: Monday - Saturday (08:00 - 17:00)</li>
@@ -336,8 +336,7 @@ export default function KontakPage() {
                 How long is the delivery time?
               </h3>
               <p className="text-gray-600">
-                Waktu pengiriman bervariasi tergantung lokasi. Jakarta dan sekitarnya 1-2 hari, 
-                luar Jawa 3-5 hari, dan daerah terpencil 5-7 hari.
+                Delivery time varies depending on location. Jakarta and surrounding areas 1-2 days, outside Java 3-5 days, and remote areas 5-7 days.
               </p>
             </div>
 
@@ -346,8 +345,7 @@ export default function KontakPage() {
                 Is free consultation available?
               </h3>
               <p className="text-gray-600">
-                Ya, kami menyediakan konsultasi gratis baik melalui telepon, email, 
-                maupun kunjungan langsung ke showroom kami.
+                Yes, we provide free consultation via phone, email, or direct visit to our showroom.
               </p>
             </div>
 
@@ -356,8 +354,7 @@ export default function KontakPage() {
                 How to order in large quantities?
               </h3>
               <p className="text-gray-600">
-                Untuk pemesanan dalam jumlah besar, silakan hubungi tim sales kami 
-                untuk mendapatkan penawaran harga khusus dan jadwal pengiriman.
+                For large quantity orders, please contact our sales team to get special price offers and delivery schedules.
               </p>
             </div>
           </div>

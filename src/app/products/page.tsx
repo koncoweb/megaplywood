@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: ['plywood products', 'construction plywood', 'furniture plywood', 'marine plywood', 'high quality plywood', 'plywood types'],
 }
 
-export default function ProdukPage() {
+export default function ProductsPage() {
   const products = [
     {
       name: 'Construction Plywood',
@@ -96,7 +96,7 @@ export default function ProdukPage() {
                     <ul className="space-y-1">
                       {product.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-sm text-gray-600">
-                          <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                          <span className="w-2 h-2 bg-black rounded-full mr-2"></span>
                           {feature}
                         </li>
                       ))}
@@ -107,7 +107,7 @@ export default function ProdukPage() {
                     <h4 className="font-semibold text-gray-900 mb-2">Applications:</h4>
                     <div className="flex flex-wrap gap-2">
                       {product.applications.map((app, idx) => (
-                        <span key={idx} className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
+                        <span key={idx} className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
                           {app}
                         </span>
                       ))}
@@ -115,7 +115,7 @@ export default function ProdukPage() {
                   </div>
 
                   <Link
-                    href="/kontak"
+                    href="/contact"
                     className="w-full bg-black hover:bg-gray-800 text-white py-2 px-4 rounded-lg font-semibold transition-colors duration-200 text-center block"
                   >
                     Product Consultation
@@ -168,7 +168,7 @@ export default function ProdukPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Guaranteed Quality</h3>
@@ -176,24 +176,24 @@ export default function ProdukPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="w-8 h-8 text-green-600" />
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Premium Grade</h3>
               <p className="text-gray-600">Using the best materials with A-A grade for maximum results</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Truck className="w-8 h-8 text-orange-600" />
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Truck className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
               <p className="text-gray-600">Fast and secure delivery service throughout Indonesia</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Package className="w-8 h-8 text-purple-600" />
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Package className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Customization</h3>
               <p className="text-gray-600">We can produce plywood according to your specific needs</p>
@@ -206,14 +206,14 @@ export default function ProdukPage() {
       <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Butuh Product Consultation?
+            Need Product Consultation?
           </h2>
           <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
             Our expert team is ready to help you choose the right plywood for your project
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/kontak"
+              href="/contact"
               className="bg-white hover:bg-gray-100 text-black px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
             >
               Contact Us

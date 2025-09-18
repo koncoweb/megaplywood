@@ -4,45 +4,45 @@ import { FileText, CheckCircle, AlertCircle, Info } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Plywood Specifications - Technical Details and Quality Standards',
   description: 'Learn detailed technical specifications of MegaPlywood including dimensions, grade, durability, and quality standards we use.',
-  keywords: ['spesifikasi plywood', 'detail teknis plywood', 'grade plywood', 'standar kualitas plywood', 'ukuran plywood'],
+  keywords: ['plywood specifications', 'detailed plywood specs', 'grade plywood', 'quality standards plywood', 'plywood sizes'],
 }
 
-export default function SpesifikasiPage() {
+export default function SpecificationsPage() {
   const specifications = [
     {
       category: 'Standard Dimensions',
       items: [
-        { name: 'Panjang', value: '2440mm (8 feet)', description: 'Ukuran standar internasional' },
-        { name: 'Lebar', value: '1220mm (4 feet)', description: 'Lebar standar untuk efisiensi transport' },
-        { name: 'Thickness', value: '6mm - 25mm', description: 'Berbagai ketebalan sesuai kebutuhan' },
-        { name: 'Toleransi', value: '±1mm', description: 'Toleransi ketebalan yang diizinkan' }
+        { name: 'Length', value: '2440mm (8 feet)', description: 'International standard size' },
+        { name: 'Width', value: '1220mm (4 feet)', description: 'Standard width for transport efficiency' },
+        { name: 'Thickness', value: '6mm - 25mm', description: 'Various thicknesses according to needs' },
+        { name: 'Tolerance', value: '±1mm', description: 'Allowed thickness tolerance' }
       ]
     },
     {
       category: 'Quality Grade',
       items: [
-        { name: 'Grade A-A', value: 'Premium', description: 'Kedua permukaan sempurna, untuk furniture' },
-        { name: 'Grade A-B', value: 'Standard', description: 'Satu permukaan sempurna, satu baik' },
-        { name: 'Grade B-B', value: 'Konstruksi', description: 'Kedua permukaan baik, untuk konstruksi' },
-        { name: 'Grade C-C', value: 'Ekonomis', description: 'Permukaan kasar, untuk aplikasi tersembunyi' }
+        { name: 'Grade A-A', value: 'Premium', description: 'Both surfaces perfect, for furniture' },
+        { name: 'Grade A-B', value: 'Standard', description: 'One surface perfect, one good' },
+        { name: 'Grade B-B', value: 'Construction', description: 'Both surfaces good, for construction' },
+        { name: 'Grade C-C', value: 'Economy', description: 'Rough surface, for hidden applications' }
       ]
     },
     {
       category: 'Physical Properties',
       items: [
-        { name: 'Density', value: '0.6-0.8 g/cm³', description: 'Kepadatan kayu lapis' },
-        { name: 'Moisture Content', value: '8-12%', description: 'Kandungan air dalam kondisi normal' },
-        { name: 'Modulus Elastisitas', value: '8,000-12,000 N/mm²', description: 'Kekakuan material' },
-        { name: 'Tensile Strength', value: '40-60 N/mm²', description: 'Kekuatan tarik' }
+        { name: 'Density', value: '0.6-0.8 g/cm³', description: 'Plywood density' },
+        { name: 'Moisture Content', value: '8-12%', description: 'Moisture content under normal conditions' },
+        { name: 'Modulus of Elasticity', value: '8,000-12,000 N/mm²', description: 'Material stiffness' },
+        { name: 'Tensile Strength', value: '40-60 N/mm²', description: 'Tensile strength' }
       ]
     },
     {
       category: 'Durability',
       items: [
-        { name: 'Weather Resistance', value: 'Class 1-3', description: 'Durability terhadap cuaca' },
-        { name: 'Fire Rating', value: 'Class B', description: 'Tingkat ketahanan api' },
-        { name: 'Fungus Resistance', value: 'Yes', description: 'Tahan terhadap jamur dan serangga' },
-        { name: 'Chemical Resistance', value: 'Limited', description: 'Durability terhadap bahan kimia' }
+        { name: 'Weather Resistance', value: 'Class 1-3', description: 'Resistance to weather' },
+        { name: 'Fire Rating', value: 'Class B', description: 'Fire resistance level' },
+        { name: 'Fungus Resistance', value: 'Yes', description: 'Resistant to fungi and insects' },
+        { name: 'Chemical Resistance', value: 'Limited', description: 'Resistance to chemicals' }
       ]
     }
   ]
@@ -51,36 +51,36 @@ export default function SpesifikasiPage() {
     {
       standard: 'SNI 01-4449-2006',
       title: 'Indonesian National Standard',
-      description: 'Standar plywood untuk konstruksi di Indonesia',
+      description: 'Plywood standard for construction in Indonesia',
       icon: CheckCircle
     },
     {
       standard: 'JIS A 5908',
       title: 'Japanese Industrial Standard',
-      description: 'Standar Jepang untuk plywood konstruksi',
+      description: 'Japanese standard for construction plywood',
       icon: CheckCircle
     },
     {
       standard: 'BS 6566',
       title: 'British Standard',
-      description: 'Standar Inggris untuk plywood',
+      description: 'British standard for plywood',
       icon: CheckCircle
     },
     {
       standard: 'ASTM D3500',
       title: 'American Standard',
-      description: 'Standar Amerika untuk plywood konstruksi',
+      description: 'American standard for construction plywood',
       icon: CheckCircle
     }
   ]
 
   const thicknessGuide = [
-    { thickness: '6mm', applications: ['Furniture tipis', 'Back panel', 'Decorative panel'] },
-    { thickness: '9mm', applications: ['Furniture sedang', 'Cabinet door', 'Shelf'] },
-    { thickness: '12mm', applications: ['Furniture berat', 'Table top', 'Counter top'] },
-    { thickness: '15mm', applications: ['Konstruksi ringan', 'Partition', 'Door panel'] },
-    { thickness: '18mm', applications: ['Konstruksi sedang', 'Flooring', 'Wall panel'] },
-    { thickness: '25mm', applications: ['Konstruksi berat', 'Structural panel', 'Load bearing'] }
+    { thickness: '6mm', applications: ['Thin furniture', 'Back panel', 'Decorative panel'] },
+    { thickness: '9mm', applications: ['Medium furniture', 'Cabinet door', 'Shelf'] },
+    { thickness: '12mm', applications: ['Heavy furniture', 'Table top', 'Counter top'] },
+    { thickness: '15mm', applications: ['Light construction', 'Partition', 'Door panel'] },
+    { thickness: '18mm', applications: ['Medium construction', 'Flooring', 'Wall panel'] },
+    { thickness: '25mm', applications: ['Heavy construction', 'Structural panel', 'Load bearing'] }
   ]
 
   return (
@@ -104,10 +104,10 @@ export default function SpesifikasiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Detail Spesifikasi Teknis
+              Detailed Technical Specifications
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Semua produk plywood kami memenuhi standar kualitas internasional
+              All our plywood products meet international quality standards
             </p>
           </div>
 
@@ -120,7 +120,7 @@ export default function SpesifikasiPage() {
                 </h3>
                 <div className="space-y-4">
                   {spec.items.map((item, idx) => (
-                    <div key={idx} className="border-l-4 border-blue-500 pl-4">
+                    <div key={idx} className="border-l-4 border-black pl-4">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <h4 className="font-semibold text-gray-900">{item.name}</h4>
                         <span className="text-black font-bold">{item.value}</span>
@@ -140,10 +140,10 @@ export default function SpesifikasiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Standar Kualitas
+              Quality Standards
             </h2>
             <p className="text-lg text-gray-600">
-              Produk kami memenuhi berbagai standar internasional
+              Our products meet various international standards
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function SpesifikasiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Panduan Thickness
+              Thickness Guide
             </h2>
             <p className="text-lg text-gray-600">
               Choose the right thickness according to application
@@ -195,11 +195,11 @@ export default function SpesifikasiPage() {
                   Thickness {guide.thickness}
                 </h3>
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900">Aplikasi:</h4>
+                  <h4 className="font-semibold text-gray-900">Applications:</h4>
                   <ul className="space-y-1">
                     {guide.applications.map((app, idx) => (
                       <li key={idx} className="flex items-center text-sm text-gray-600">
-                        <span className="w-2 h-2 bg-gray-500 rounded-full mr-2"></span>
+                        <span className="w-2 h-2 bg-black rounded-full mr-2"></span>
                         {app}
                       </li>
                     ))}
@@ -219,7 +219,7 @@ export default function SpesifikasiPage() {
               Quality Control
             </h2>
             <p className="text-lg text-gray-600">
-              Proses kontrol kualitas yang ketat untuk setiap produk
+              Strict quality control process for every product
             </p>
           </div>
 
@@ -228,24 +228,24 @@ export default function SpesifikasiPage() {
               <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-black" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Pemeriksaan Material</h3>
-              <p className="text-gray-600">Setiap lembar plywood diperiksa ketebalan, kekuatan, dan kualitas permukaan</p>
+              <h3 className="text-xl font-semibold mb-2">Material Inspection</h3>
+              <p className="text-gray-600">Every plywood sheet is inspected for thickness, strength, and surface quality</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <AlertCircle className="w-8 h-8 text-green-600" />
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <AlertCircle className="w-8 h-8 text-black" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Testing Laboratorium</h3>
-              <p className="text-gray-600">Pengujian fisik dan mekanik di laboratorium bersertifikat</p>
+              <h3 className="text-xl font-semibold mb-2">Laboratory Testing</h3>
+              <p className="text-gray-600">Physical and mechanical testing in certified laboratories</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Info className="w-8 h-8 text-orange-600" />
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Info className="w-8 h-8 text-black" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Dokumentasi Lengkap</h3>
-              <p className="text-gray-600">Setiap batch produk dilengkapi dengan sertifikat kualitas dan dokumentasi</p>
+              <h3 className="text-xl font-semibold mb-2">Complete Documentation</h3>
+              <p className="text-gray-600">Every batch of products comes with quality certificates and documentation</p>
             </div>
           </div>
         </div>

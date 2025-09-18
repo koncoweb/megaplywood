@@ -66,18 +66,18 @@ export default function HomePage() {
               MegaPlywood supplies high-quality Indonesian plywood, MDF, HPL, veneer, and flooring for construction, interiors, and manufacturing. Competitive pricing, complete stock, and fast nationwide and worldwide delivery.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/produk"
-                className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 text-center text-lg"
-              >
-                View Products
-              </Link>
-              <Link
-                href="/kontak"
-                className="border-2 border-black hover:bg-black hover:text-white text-black px-8 py-4 rounded-lg font-semibold transition-colors duration-200 text-center text-lg"
-              >
-                Contact Us
-              </Link>
+            <Link
+              href="/products"
+              className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-200 text-center text-lg"
+            >
+              View Products
+            </Link>
+            <Link
+              href="/contact"
+              className="border-2 border-black hover:bg-black hover:text-white text-black px-8 py-4 rounded-lg font-semibold transition-colors duration-200 text-center text-lg"
+            >
+              Contact Us
+            </Link>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/tentang"
+                href="/about"
                 className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 text-center"
               >
                 Learn More

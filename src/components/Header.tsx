@@ -9,12 +9,12 @@ export default function Header() {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Plywood History', href: '/sejarah' },
-    { name: 'Our Products', href: '/produk' },
-    { name: 'Specifications', href: '/spesifikasi' },
+    { name: 'Plywood History', href: '/history' },
+    { name: 'Our Products', href: '/products' },
+    { name: 'Specifications', href: '/specifications' },
     { name: 'Free Samples', href: '/samples' },
-    { name: 'About Us', href: '/tentang' },
-    { name: 'Contact', href: '/kontak' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ]
 
   return (

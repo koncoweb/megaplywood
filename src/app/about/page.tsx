@@ -2,12 +2,12 @@ import { Metadata } from 'next'
 import { Users, Award, Target, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us - MegaPlywood Indonesia Distributor Terpercaya',
-  description: 'Pelajari lebih lanjut tentang MegaPlywood Indonesia, distributor plywood terpercaya dengan pengalaman bertahun-tahun dalam industri kayu lapis di Indonesia.',
-  keywords: ['tentang megaplywood', 'perusahaan plywood', 'distributor terpercaya', 'sejarah perusahaan', 'visi misi'],
+  title: 'About Us - MegaPlywood Indonesia Trusted Distributor',
+  description: 'Learn more about MegaPlywood Indonesia, a trusted plywood distributor with years of experience in the Indonesian plywood industry.',
+  keywords: ['about megaplywood', 'plywood company', 'trusted distributor', 'company history', 'vision mission'],
 }
 
-export default function TentangPage() {
+export default function AboutPage() {
   const values = [
     {
       icon: Award,
@@ -32,7 +32,7 @@ export default function TentangPage() {
   ]
 
   const milestones = [
-    { year: '2010', title: 'Pendirian Company', description: 'MegaPlywood Indonesia was founded with the vision of becoming a trusted plywood distributor' },
+    { year: '2010', title: 'Company Establishment', description: 'MegaPlywood Indonesia was founded with the vision of becoming a trusted plywood distributor' },
     { year: '2015', title: 'Network Expansion', description: 'Expanding distribution network throughout Indonesia' },
     { year: '2018', title: 'ISO Certification', description: 'Obtained ISO 9001:2015 certification for quality management system' },
     { year: '2020', title: 'Digital Transformation', description: 'Launched digital platform for easy ordering' },
@@ -49,7 +49,7 @@ export default function TentangPage() {
               About Us
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto">
-              MegaPlywood Indonesia - Distributor Plywood Terpercaya
+              MegaPlywood Indonesia - Trusted Plywood Distributor
             </p>
           </div>
         </div>
@@ -70,12 +70,12 @@ export default function TentangPage() {
                 With years of experience in the plywood industry, we understand customer needs and are committed to providing the best solutions. Our professional team is ready to help you choose the right products for your construction or furniture projects.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
+                <a href="/products" className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 text-center">
                   View Our Products
-                </button>
-                <button className="border-2 border-black hover:bg-black text-black hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
-                  Hubungi Kami
-                </button>
+                </a>
+                <a href="/contact" className="border-2 border-black hover:bg-black text-black hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 text-center">
+                  Contact Us
+                </a>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-8">
@@ -92,11 +92,11 @@ export default function TentangPage() {
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
                     <p className="text-2xl font-bold text-black">1000+</p>
-                    <p className="text-sm text-gray-600">Pelanggan Puas</p>
+                    <p className="text-sm text-gray-600">Satisfied Customers</p>
                   </div>
                   <div>
                     <p className="text-2xl font-bold text-black">14+</p>
-                    <p className="text-sm text-gray-600">Tahun Pengalaman</p>
+                    <p className="text-sm text-gray-600">Years Experience</p>
                   </div>
                 </div>
               </div>
@@ -175,16 +175,13 @@ export default function TentangPage() {
             <div className="bg-gray-50 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-lg text-gray-700">
-                Menjadi distributor plywood terdepan di Indonesia yang dikenal karena kualitas produk, 
-                layanan terbaik, dan inovasi berkelanjutan dalam memenuhi kebutuhan konstruksi dan furniture.
+                To become the leading plywood distributor in Indonesia known for product quality, best service, and continuous innovation in meeting construction and furniture needs.
               </p>
             </div>
-            <div className="bg-green-50 rounded-lg p-8">
+            <div className="bg-gray-50 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-lg text-gray-700">
-                Menyediakan plywood berkualitas tinggi dengan harga kompetitif, memberikan pelayanan 
-                terbaik kepada pelanggan, dan berkontribusi pada pembangunan infrastruktur Indonesia 
-                yang berkelanjutan.
+                Providing high-quality plywood at competitive prices, providing the best service to customers, and contributing to Indonesia's sustainable infrastructure development.
               </p>
             </div>
           </div>
@@ -201,12 +198,12 @@ export default function TentangPage() {
             Get high-quality plywood products with the best service from our professional team
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-black px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
-              Lihat Produk
-            </button>
-            <button className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
-              Hubungi Kami
-            </button>
+            <a href="/products" className="bg-white hover:bg-gray-100 text-black px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
+              View Products
+            </a>
+            <a href="/contact" className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
+              Contact Us
+            </a>
           </div>
         </div>
       </section>
