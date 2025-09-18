@@ -181,7 +181,7 @@ export default function AboutPage() {
             <div className="bg-gray-50 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-lg text-gray-700">
-                Providing high-quality plywood at competitive prices, providing the best service to customers, and contributing to Indonesia's sustainable infrastructure development.
+                Providing high-quality plywood at competitive prices, providing the best service to customers, and contributing to Indonesia&apos;s sustainable infrastructure development.
               </p>
             </div>
           </div>

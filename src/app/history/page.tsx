@@ -59,7 +59,7 @@ export default function SejarahPage() {
               Development Timeline
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Let's see the journey of Indonesia's plywood industry from the beginning to the present
+              Let&apos;s see the journey of Indonesia&apos;s plywood industry from the beginning to the present
             </p>
           </div>
 
@@ -113,7 +113,7 @@ export default function SejarahPage() {
                 <span className="text-white font-bold text-2xl">1st</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Largest Producer</h3>
-              <p className="text-gray-600">Indonesia is one of the world's largest plywood producers</p>
+              <p className="text-gray-600">Indonesia is one of the world&apos;s largest plywood producers</p>
             </div>
 
             <div className="bg-green-50 rounded-lg p-6 text-center">
@@ -144,7 +144,7 @@ export default function SejarahPage() {
                 Modern Plywood Era
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Today, Indonesia's plywood industry has developed into one of the most advanced in the world with modern technology and international quality standards.
+                Today, Indonesia&apos;s plywood industry has developed into one of the most advanced in the world with modern technology and international quality standards.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -186,7 +186,7 @@ export default function SejarahPage() {
                     <span className="text-white font-bold text-3xl">MP</span>
                   </div>
                   <p className="text-gray-600">
-                    As part of the long history of Indonesia's plywood industry, 
+                    As part of the long history of Indonesia&apos;s plywood industry, 
                     MegaPlywood is committed to continuously providing high-quality products 
                     by following the latest technological developments.
                   </p>
