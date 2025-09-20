@@ -44,7 +44,7 @@ export function getDatabaseConfig(): DatabaseConfig {
 }
 
 // Supabase client
-let supabaseClient: any = null
+let supabaseClient: unknown = null
 
 export function getSupabaseClient() {
   if (!supabaseClient) {

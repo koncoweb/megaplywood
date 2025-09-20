@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FileText, Scale, AlertTriangle, CheckCircle, XCircle, Mail, Phone } from 'lucide-react'
+import { FileText, Scale, AlertTriangle, Mail, Phone } from 'lucide-react'
 
 export default function TermsConditionsPage() {
   return (
