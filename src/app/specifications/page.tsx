@@ -1,75 +1,186 @@
 import { Metadata } from 'next'
-import { FileText, CheckCircle, AlertCircle, Info } from 'lucide-react'
+import { FileText, CheckCircle, AlertCircle, Info, Package, Shield, Star, Zap, Leaf, Award, TreePine, MessageCircle } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Plywood Specifications - Technical Details and Quality Standards',
-  description: 'Learn detailed technical specifications of MegaPlywood including dimensions, grade, durability, and quality standards we use.',
-  keywords: ['plywood specifications', 'detailed plywood specs', 'grade plywood', 'quality standards plywood', 'plywood sizes'],
+  title: 'Indonesia Plywood Specifications - Technical Details & Standards | MegaPlywood',
+  description: 'Complete Indonesia plywood specifications including Softwood, Meranti, Filmface, Blockboard, Melamine, and Three Layers Panel. JAS, EN, IHPA 1997, and JPIC compliant plywood from MegaPlywood Indonesia.',
+  keywords: [
+    'indonesia plywood specifications', 'plywood technical specifications', 'meranti plywood specs',
+    'softwood plywood specifications', 'filmface plywood specs', 'blockboard specifications',
+    'melamine plywood specs', 'JAS compliant plywood', 'EN standard plywood', 'IHPA 1997 plywood',
+    'JPIC plywood standards', 'indonesian plywood grades', 'plywood thickness specifications'
+  ],
+  openGraph: {
+    title: 'Indonesia Plywood Specifications - Technical Details & Standards',
+    description: 'Complete technical specifications for all Indonesian plywood types including grades, thicknesses, sizes, and compliance standards.',
+    type: 'website',
+    images: [
+      {
+        url: '/images/static/products/plywood-specifications.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Indonesia Plywood Specifications - MegaPlywood',
+      },
+    ],
+  },
 }
 
 export default function SpecificationsPage() {
-  const specifications = [
+  const plywoodTypes = [
     {
-      category: 'Standard Dimensions',
-      items: [
-        { name: 'Length', value: '2440mm (8 feet)', description: 'International standard size' },
-        { name: 'Width', value: '1220mm (4 feet)', description: 'Standard width for transport efficiency' },
-        { name: 'Thickness', value: '6mm - 25mm', description: 'Various thicknesses according to needs' },
-        { name: 'Tolerance', value: '±1mm', description: 'Allowed thickness tolerance' }
-      ]
+      name: 'Softwood Plywood',
+      subtitle: 'Albasia/Falcata Based Plywood',
+      description: 'High-quality softwood plywood made from Albasia and Falcata wood, perfect for construction and general building applications.',
+      specifications: [
+        { name: 'Face/Back', value: 'Albasia/ Falcata' },
+        { name: 'Short/Longcore', value: 'Albasia/ Falcata' },
+        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
+        { name: 'Grade', value: 'BBCC & UTY Better' },
+        { name: 'Packing Export', value: 'Pallete' },
+        { name: 'Board Size', value: '1220 x 2440 mm' },
+        { name: 'Thickness Type', value: '3, 4, 6, 8, 9, 12, 15, 18 mm' }
+      ],
+      icon: TreePine,
+      color: 'from-green-600 to-green-800'
     },
     {
-      category: 'Quality Grade',
-      items: [
-        { name: 'Grade A-A', value: 'Premium', description: 'Both surfaces perfect, for furniture' },
-        { name: 'Grade A-B', value: 'Standard', description: 'One surface perfect, one good' },
-        { name: 'Grade B-B', value: 'Construction', description: 'Both surfaces good, for construction' },
-        { name: 'Grade C-C', value: 'Economy', description: 'Rough surface, for hidden applications' }
-      ]
+      name: 'Indonesian Full Meranti Plywood',
+      subtitle: 'Premium Meranti Wood Plywood',
+      description: 'Premium quality plywood made entirely from Meranti wood, offering superior strength and natural beauty for high-end applications.',
+      specifications: [
+        { name: 'Face/Back', value: 'Meranti' },
+        { name: 'Short/Longcore', value: 'Meranti' },
+        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
+        { name: 'Grade', value: 'BBCC & UTY Better' },
+        { name: 'Packing Export', value: 'Pallete' },
+        { name: 'Board Size', value: '1220 x 2440 mm' },
+        { name: 'Thickness Type', value: '6, 9, 12, 15, 18 mm' }
+      ],
+      icon: Star,
+      color: 'from-amber-600 to-amber-800'
     },
     {
-      category: 'Physical Properties',
-      items: [
-        { name: 'Density', value: '0.6-0.8 g/cm³', description: 'Plywood density' },
-        { name: 'Moisture Content', value: '8-12%', description: 'Moisture content under normal conditions' },
-        { name: 'Modulus of Elasticity', value: '8,000-12,000 N/mm²', description: 'Material stiffness' },
-        { name: 'Tensile Strength', value: '40-60 N/mm²', description: 'Tensile strength' }
-      ]
+      name: 'Indonesia Filmface Plywood',
+      subtitle: 'Phenolic Film Coated Plywood',
+      description: 'High-performance plywood with phenolic film coating, ideal for concrete formwork and construction applications requiring smooth surfaces.',
+      specifications: [
+        { name: 'Face/Back', value: 'Phenolic Film Face/Back' },
+        { name: 'Core', value: 'Albasia Falcata, Cadamba, Mahogany' },
+        { name: 'Glue', value: 'WBP Phenol (Bonding Layer)' },
+        { name: 'Grade', value: 'BBCC' },
+        { name: 'Packing Export', value: 'Pallete' },
+        { name: 'Board Size', value: '1220 x 2440 mm' },
+        { name: 'Thickness Type', value: '12, 15, 18 mm' }
+      ],
+      icon: Shield,
+      color: 'from-blue-600 to-blue-800'
     },
     {
-      category: 'Durability',
-      items: [
-        { name: 'Weather Resistance', value: 'Class 1-3', description: 'Resistance to weather' },
-        { name: 'Fire Rating', value: 'Class B', description: 'Fire resistance level' },
-        { name: 'Fungus Resistance', value: 'Yes', description: 'Resistant to fungi and insects' },
-        { name: 'Chemical Resistance', value: 'Limited', description: 'Resistance to chemicals' }
-      ]
+      name: 'Indonesia Blockboard Hevea Plywood',
+      subtitle: 'Hevea Core Blockboard',
+      description: 'Specialized blockboard with Hevea core, combining strength and stability for furniture and construction applications.',
+      specifications: [
+        { name: 'Face/Back', value: 'Albasia/Falcata, Meranti, Mahogany' },
+        { name: 'Core', value: 'Albasia/Falcata' },
+        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
+        { name: 'Grade', value: 'BBCC & UTY Better' },
+        { name: 'Packing Export', value: 'Pallete' },
+        { name: 'Board Size', value: '1220 x 2440 mm' },
+        { name: 'Thickness Type', value: '15, 18 mm' }
+      ],
+      icon: Package,
+      color: 'from-purple-600 to-purple-800'
+    },
+    {
+      name: 'Indonesian Melamine Polyester Plywood',
+      subtitle: 'Polyester Coated Melamine Plywood',
+      description: 'Premium melamine plywood with polyester coating, offering excellent surface finish and durability for furniture and interior applications.',
+      specifications: [
+        { name: 'Face/Back', value: 'Polyester Doff Coating, Polyester Glossy Coating' },
+        { name: 'Short/Longcore', value: 'Albasia Falcata, Cadamba, Mahogany' },
+        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
+        { name: 'Grade', value: 'BBCC & UTY Better' },
+        { name: 'Packing Export', value: 'Pallete' },
+        { name: 'Board Size', value: '1220 x 2440 mm' },
+        { name: 'Thickness Type', value: '3, 6, 9, 12, 15, 18 mm' }
+      ],
+      icon: Award,
+      color: 'from-indigo-600 to-indigo-800'
+    },
+    {
+      name: 'Indonesian Melamine Laminate Plywood',
+      subtitle: 'Melamine Film Laminate Plywood',
+      description: 'High-quality melamine laminate plywood with film coating, perfect for furniture manufacturing and interior design applications.',
+      specifications: [
+        { name: 'Face/Back', value: 'Melamine Film Doff Coating, Melamine Film Glossy Coating' },
+        { name: 'Short/Longcore', value: 'Albasia Falcata, Cadamba, Mahogany' },
+        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
+        { name: 'Grade', value: 'BBCC & UTY Better' },
+        { name: 'Packing Export', value: 'Pallete' },
+        { name: 'Board Size', value: '1220 x 2440 mm' },
+        { name: 'Thickness Type', value: '6, 9, 12, 15, 18 mm' }
+      ],
+      icon: Zap,
+      color: 'from-red-600 to-red-800'
+    },
+    {
+      name: 'Meranti Combine Plywood',
+      subtitle: 'Mixed Wood Core Plywood',
+      description: 'Versatile plywood combining Meranti face with mixed wood cores, offering excellent value and performance for various applications.',
+      specifications: [
+        { name: 'Face/Back', value: 'Meranti' },
+        { name: 'Short/Longcore', value: 'Meranti, Albasia/Falcata, Cadamba, Mahogany' },
+        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
+        { name: 'Grade', value: 'BBCC & UTY Better' },
+        { name: 'Packing Export', value: 'Pallete' },
+        { name: 'Board Size', value: '1220 x 2440 mm' },
+        { name: 'Thickness Type', value: '3, 4, 6, 8, 9, 12, 15, 18 mm' }
+      ],
+      icon: Leaf,
+      color: 'from-teal-600 to-teal-800'
+    },
+    {
+      name: 'Three Layers Panel',
+      subtitle: 'Structural Three-Layer Panel',
+      description: 'Heavy-duty three-layer structural panel designed for load-bearing applications and construction projects requiring maximum strength.',
+      specifications: [
+        { name: 'Face/Back', value: 'Meranti' },
+        { name: 'Core', value: 'Albasia Wood' },
+        { name: 'Glue', value: 'MR-Glue, E1 Glue' },
+        { name: 'Grade', value: 'BBCC & UTY Better' },
+        { name: 'Packing Export', value: 'Pallete' },
+        { name: 'Board Size', value: '1220 x 2440 mm' },
+        { name: 'Thickness Type', value: '36, 44 mm' }
+      ],
+      icon: Shield,
+      color: 'from-gray-600 to-gray-800'
     }
   ]
 
   const standards = [
     {
-      standard: 'SNI 01-4449-2006',
-      title: 'Indonesian National Standard',
-      description: 'Plywood standard for construction in Indonesia',
-      icon: CheckCircle
+      standard: 'JAS Standard',
+      title: 'Japanese Agricultural Standard',
+      description: 'Japanese Agricultural Standard for plywood quality and performance',
+      icon: Award
     },
     {
-      standard: 'JIS A 5908',
-      title: 'Japanese Industrial Standard',
-      description: 'Japanese standard for construction plywood',
-      icon: CheckCircle
+      standard: 'EN Standard',
+      title: 'European Norm Standards',
+      description: 'European Norm standards for construction materials',
+      icon: Shield
     },
     {
-      standard: 'BS 6566',
-      title: 'British Standard',
-      description: 'British standard for plywood',
-      icon: CheckCircle
+      standard: 'IHPA 1997',
+      title: 'Indonesian Hardwood Plywood Association',
+      description: 'Indonesian Hardwood Plywood Association 1997 standards',
+      icon: Star
     },
     {
-      standard: 'ASTM D3500',
-      title: 'American Standard',
-      description: 'American standard for construction plywood',
+      standard: 'JPIC Standard',
+      title: 'Japan Plywood Inspection Corporation',
+      description: 'Japan Plywood Inspection Corporation standards',
       icon: CheckCircle
     }
   ]
@@ -93,44 +204,69 @@ export default function SpecificationsPage() {
               Plywood Specifications
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto">
-              Complete details of technical specifications and quality standards of MegaPlywood
+              Indonesian Phenolic Plywood - Discover the best quality Indonesia Plywood specifications at MegaPlywood Indonesia
+            </p>
+            <p className="text-lg text-gray-200 max-w-4xl mx-auto mt-4">
+              Our plywood is made from high-quality Meranti, Tropical Hardwood, Falcata, and Balsa wood types, 
+              and is available in various sizes and thicknesses. Our products are compliant with JAS, EN, IHPA 1997, and JPIC standards.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Specifications Grid */}
+      {/* Plywood Types Specifications */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Detailed Technical Specifications
+              Complete Plywood Specifications
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              All our plywood products meet international quality standards
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Detailed technical specifications for all our Indonesian plywood products, 
+              including materials, grades, sizes, and compliance standards.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {specifications.map((spec, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
-                  <FileText className="w-6 h-6 mr-3 text-black" />
-                  {spec.category}
-                </h3>
-                <div className="space-y-4">
-                  {spec.items.map((item, idx) => (
-                    <div key={idx} className="border-l-4 border-black pl-4">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                        <h4 className="font-semibold text-gray-900">{item.name}</h4>
-                        <span className="text-black font-bold">{item.value}</span>
-                      </div>
-                      <p className="text-sm text-gray-600 mt-1">{item.description}</p>
+          <div className="space-y-12">
+            {plywoodTypes.map((plywood, index) => {
+              const IconComponent = plywood.icon
+              return (
+                <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className={`w-16 h-16 bg-gradient-to-r ${plywood.color} rounded-xl flex items-center justify-center`}>
+                      <IconComponent className="w-8 h-8 text-white" />
                     </div>
-                  ))}
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900">
+                        {plywood.name}
+                      </h3>
+                      <p className={`text-lg font-semibold bg-gradient-to-r ${plywood.color} bg-clip-text text-transparent`}>
+                        {plywood.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    {plywood.description}
+                  </p>
+
+                  <div className="bg-gray-50 rounded-lg p-6">
+                    <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                      <FileText className="w-6 h-6 text-blue-600 mr-2" />
+                      Technical Specifications
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {plywood.specifications.map((spec, idx) => (
+                        <div key={idx} className="flex justify-between items-center py-2 border-b border-gray-200 last:border-b-0">
+                          <span className="font-semibold text-gray-900">{spec.name}:</span>
+                          <span className="text-gray-700 text-right">{spec.value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -251,22 +387,37 @@ export default function SpecificationsPage() {
         </div>
       </section>
 
-      {/* Download Section */}
+      {/* CTA Section */}
       <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Download Complete Specifications
+            Need Custom Specifications?
           </h2>
           <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
-            Get complete technical specification documents for your project reference
+            Our technical team can provide custom specifications and detailed information 
+            for your specific project requirements. Contact us for personalized assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white hover:bg-gray-100 text-black px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
-              Download PDF
-            </button>
-            <button className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
-              Request Quote
-            </button>
+            <a
+              href="https://wa.me/6285640012454?text=Hi%20MegaPlywood%20Indonesia,%20I%20need%20custom%20plywood%20specifications%20for%20my%20project.%20Please%20provide%20more%20information."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
+            >
+              <MessageCircle className="w-5 h-5" />
+              <span>Contact Technical Team</span>
+            </a>
+            <Link
+              href="/products"
+              className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+            >
+              View All Products
+            </Link>
+          </div>
+          <div className="mt-8 pt-8 border-t border-gray-700">
+            <p className="text-gray-400 text-lg">
+              All specifications subject to standard manufacturing tolerances and quality control procedures
+            </p>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Package, Download, Mail, Phone, MapPin } from 'lucide-react'
+import { Package, Download, Mail, Phone, MapPin, MessageCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Plywood Samples - Dapatkan Free Sample dari MegaPlywood',
@@ -299,30 +299,48 @@ export default function SamplesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-8 h-8 text-black" />
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MessageCircle className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Phone</h3>
-              <p className="text-gray-600">+62 21 1234 5678</p>
-              <p className="text-sm text-gray-500">Senin - Jumat: 08:00 - 17:00</p>
+              <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
+              <a
+                href="https://wa.me/6285640012454?text=Hi%20MegaPlywood%20Indonesia,%20I%20would%20like%20to%20request%20free%20plywood%20samples.%20Please%20provide%20more%20information."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:text-green-700 font-medium transition-colors"
+                itemProp="telephone"
+                content="+6285640012454"
+              >
+                +6285640012454
+              </a>
+              <p className="text-sm text-gray-500">Available 24/7</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-8 h-8 text-green-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Mail className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p className="text-gray-600">samples@megaplywood.id</p>
-              <p className="text-sm text-gray-500">Response within 24 hours</p>
+              <h3 className="text-xl font-semibold mb-2">Website</h3>
+              <a
+                href="https://www.megaplywoodindonesia.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                itemProp="url"
+              >
+                www.megaplywoodindonesia.com
+              </a>
+              <p className="text-sm text-gray-500">Visit our website</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-orange-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Address</h3>
-              <p className="text-gray-600">Jakarta, Indonesia</p>
-              <p className="text-sm text-gray-500">Visit our showroom</p>
+              <h3 className="text-xl font-semibold mb-2">Office Location</h3>
+              <p className="text-gray-600">Jalan Gajahmada Batang</p>
+              <p className="text-gray-600">Batang Regency, Central Java</p>
+              <p className="text-sm text-gray-500">Monday - Friday: 08:00 - 17:00</p>
             </div>
           </div>
         </div>
