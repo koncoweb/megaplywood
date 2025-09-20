@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 import { Users, Award, Target, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us - MegaPlywood Indonesia Trusted Distributor',
-  description: 'Learn more about MegaPlywood Indonesia, a trusted plywood distributor with years of experience in the Indonesian plywood industry.',
-  keywords: ['about megaplywood', 'plywood company', 'trusted distributor', 'company history', 'vision mission'],
+  title: 'About Us - Mega Plywood Indonesia Leading Manufacturer',
+  description: 'Learn more about Mega Plywood Indonesia, a leading plywood manufacturer founded in 2016, located in Central Java, serving customers worldwide with quality javanese wood plywoods.',
+  keywords: ['about mega plywood', 'plywood manufacturer', 'indonesian plywood', 'central java plywood', 'javanese wood', 'company history', 'vision mission'],
 }
 
 export default function AboutPage() {
@@ -32,11 +32,11 @@ export default function AboutPage() {
   ]
 
   const milestones = [
-    { year: '2010', title: 'Company Establishment', description: 'MegaPlywood Indonesia was founded with the vision of becoming a trusted plywood distributor' },
-    { year: '2015', title: 'Network Expansion', description: 'Expanding distribution network throughout Indonesia' },
-    { year: '2018', title: 'ISO Certification', description: 'Obtained ISO 9001:2015 certification for quality management system' },
-    { year: '2020', title: 'Digital Transformation', description: 'Launched digital platform for easy ordering' },
-    { year: '2024', title: 'Product Expansion', description: 'Added various plywood variants for more specific needs' }
+    { year: '2016', title: 'Company Establishment', description: 'Mega Plywood was founded as a leading plywood manufacturer in Indonesia' },
+    { year: '2018', title: 'Central Java Production', description: 'Established production facility in Central Java for javanese wood plywoods' },
+    { year: '2020', title: 'Global Expansion', description: 'Expanded to serve customers worldwide with various wood types' },
+    { year: '2022', title: 'Quality Certification', description: 'Obtained international quality standards for plywood production' },
+    { year: '2024', title: 'Digital Platform', description: 'Launched comprehensive online platform for customer engagement' }
   ]
 
   return (
@@ -64,10 +64,19 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                MegaPlywood Indonesia was founded with the vision of becoming a trusted plywood distributor that provides high-quality products at competitive prices. Since 2010, we have served thousands of customers throughout Indonesia.
+                Mega Plywood is a leading Plywood Manufacturer in Indonesia. Mega Plywood focuses on providing quality Indonesian Plywood with various types of specifications. Mega Plywood is able to provide various types of plywood to all customers from all over the world and Indonesia, so whatever amount of plywood you request, we can fulfill it.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                With years of experience in the plywood industry, we understand customer needs and are committed to providing the best solutions. Our professional team is ready to help you choose the right products for your construction or furniture projects.
+                Founded in 2016, Our Company Focuses on providing Plywood Needs in several Region of Indonesia and globally for industrial Citizen plywood needs.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                We Are Located in Central Java, so we can easily produce best javanese wood plywoods. In central Java, you can find various types of wood such as: Albizia Falcata, Meranti, Havea Brasiliensis, Mahogany, Tectona Grandis and Pine wood.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                As Indonesian Plywood Manufacture, But we also Produce other kinds of plywoods other than javanese woods material.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                In this website we will explain our various kinds of plywood production to meet your company&apos;s needs. We are ready to hold face-to-face or online discussions to reach a mutual agreement regarding the plywood production you need.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="/products" className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 text-center">
@@ -95,7 +104,7 @@ export default function AboutPage() {
                     <p className="text-sm text-gray-600">Satisfied Customers</p>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-black">14+</p>
+                    <p className="text-2xl font-bold text-black">8+</p>
                     <p className="text-sm text-gray-600">Years Experience</p>
                   </div>
                 </div>
@@ -108,6 +117,26 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Wood Types We Use
+            </h2>
+            <p className="text-lg text-gray-600">
+              Premium quality wood materials from Central Java forests
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+            {['Albizia Falcata', 'Meranti', 'Hevea Brasiliensis', 'Mahogany', 'Tectona Grandis', 'Pine Wood'].map((wood, index) => (
+              <div key={index} className="bg-gray-50 rounded-lg p-4 text-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-gray-700 to-black rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-white font-bold text-sm">🌳</span>
+                </div>
+                <p className="text-sm font-medium text-gray-900">{wood}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Our Values
@@ -130,6 +159,60 @@ export default function AboutPage() {
                 </div>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Central Java Production Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Central Java Production Hub
+              </h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Located in the heart of Central Java, we have direct access to premium javanese wood resources. This strategic location allows us to produce the finest quality plywood using traditional and modern manufacturing techniques.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Our Central Java facility enables us to source various types of wood including Albizia Falcata, Meranti, Hevea Brasiliensis, Mahogany, Tectona Grandis, and Pine wood directly from local forests.
+              </p>
+              <div className="flex items-center space-x-4">
+                <div className="flex items-center">
+                  <span className="text-2xl mr-2">📍</span>
+                  <span className="text-gray-700">Central Java, Indonesia</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-2xl mr-2">🏭</span>
+                  <span className="text-gray-700">Manufacturing Plant</span>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Production Capabilities</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-black rounded-full mr-3"></span>
+                  <span className="text-gray-700">Javanese Wood Plywood</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-black rounded-full mr-3"></span>
+                  <span className="text-gray-700">Various Wood Types</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-black rounded-full mr-3"></span>
+                  <span className="text-gray-700">Custom Specifications</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-black rounded-full mr-3"></span>
+                  <span className="text-gray-700">Large Volume Production</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-black rounded-full mr-3"></span>
+                  <span className="text-gray-700">Quality Control Standards</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
