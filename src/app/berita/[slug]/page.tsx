@@ -7,13 +7,14 @@ import { formatDate, getReadingTime, getFeaturedImageUrl } from '@/lib/blog-util
 import { Calendar, Clock, User, ArrowLeft, Share2 } from 'lucide-react'
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = await mockBlogDb.getPostBySlug(params.slug)
+  const { slug } = await params
+  const post = await mockBlogDb.getPostBySlug(slug)
 
   if (!post) {
     notFound()

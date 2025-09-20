@@ -149,13 +149,14 @@ This factory visit with Mr. Chetan from India demonstrates our commitment to tra
 }
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
-  const project = projects[params.slug as keyof typeof projects]
+  const { slug } = await params
+  const project = projects[slug as keyof typeof projects]
   
   if (!project) {
     return {
@@ -188,8 +189,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects[params.slug as keyof typeof projects]
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params
+  const project = projects[slug as keyof typeof projects]
 
   if (!project) {
     notFound()

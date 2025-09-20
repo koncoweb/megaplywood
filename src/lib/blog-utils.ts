@@ -1,5 +1,5 @@
 // Blog utility functions
-import { BlogPost } from './database'
+import { BlogPost } from './mock-data'
 
 export function generateSlug(title: string): string {
   return title
