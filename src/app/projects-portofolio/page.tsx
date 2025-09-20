@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Globe, Ship, MapPin, Calendar, Package, CheckCircle } from 'lucide-react'
+import { Globe, MapPin, Calendar, Package, CheckCircle } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -268,7 +268,7 @@ export default function ProjectsPortfolioPage() {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Join our global network of satisfied customers. Let us help you with your next plywood project, 
-              whether it's for construction, furniture manufacturing, or industrial applications.
+              whether it&apos;s for construction, furniture manufacturing, or industrial applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

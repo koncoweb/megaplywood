@@ -612,7 +612,7 @@ export default function HomePage() {
             </p>
             
             <p className="mb-2">
-              <strong>Export Markets and Primary Destination Countries:</strong> Despite facing competition from countries like China and Vietnam, Indonesia remains one of the world's largest exporters of tropical plywood. Based on trade data, the main export destination countries for Indonesian plywood include Japan (traditional market and one of the largest buyers of Indonesian tropical plywood), United States (important market, especially for plywood meeting specific quality standards), South Korea (major market in Asia), Malaysia (often serves as transit or final destination), and Middle East countries such as Saudi Arabia (growing and significant market).
+              <strong>Export Markets and Primary Destination Countries:</strong> Despite facing competition from countries like China and Vietnam, Indonesia remains one of the world&apos;s largest exporters of tropical plywood. Based on trade data, the main export destination countries for Indonesian plywood include Japan (traditional market and one of the largest buyers of Indonesian tropical plywood), United States (important market, especially for plywood meeting specific quality standards), South Korea (major market in Asia), Malaysia (often serves as transit or final destination), and Middle East countries such as Saudi Arabia (growing and significant market).
             </p>
             
             <p className="mb-2">

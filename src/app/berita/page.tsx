@@ -35,7 +35,7 @@ export default async function BlogPage() {
                   No Posts Available
                 </h2>
                 <p className="text-gray-600">
-                  We're working on bringing you the latest news and insights. Check back soon!
+                  We&apos;re working on bringing you the latest news and insights. Check back soon!
                 </p>
               </div>
             </div>

@@ -16,7 +16,7 @@ export default function NotFound() {
           </h1>
           
           <p className="text-gray-600 mb-8">
-            The blog post you're looking for doesn't exist or may have been removed.
+            The blog post you&apos;re looking for doesn&apos;t exist or may have been removed.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

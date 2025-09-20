@@ -244,7 +244,7 @@ export default function SejarahPage() {
             <div className="bg-blue-50 rounded-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">1980s (Golden Era)</h3>
               <p className="text-gray-600 mb-4">
-                The government's strategic policy of banning log exports and promoting domestic processing triggered explosive growth. New factories emerged throughout Kalimantan and Sumatra.
+                The government&apos;s strategic policy of banning log exports and promoting domestic processing triggered explosive growth. New factories emerged throughout Kalimantan and Sumatra.
               </p>
             </div>
 

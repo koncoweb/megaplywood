@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Phone, Mail, MapPin, Clock, MessageCircle, Globe, Factory } from 'lucide-react'
+import { MapPin, Clock, MessageCircle, Globe, Factory } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Contact MegaPlywood Indonesia - Phone +6285640012454 | WhatsApp & Production Locations',
