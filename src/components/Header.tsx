@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, ChevronDown, Briefcase } from 'lucide-react'
 
 export default function Header() {
@@ -32,8 +33,14 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-gray-800 to-black rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">MP</span>
+              <div className="w-12 h-12 relative">
+                <Image
+                  src="/images/static/logos/logo-megaplywoodindonesia.png"
+                  alt="MegaPlywood Indonesia"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-xl font-bold text-gray-900">MEGA PLYWOOD</h1>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Users, Award, Target, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -89,8 +90,13 @@ export default function AboutPage() {
             </div>
             <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-r from-gray-800 to-black rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white font-bold text-4xl">MP</span>
+                <div className="w-32 h-32 relative mx-auto mb-6">
+                  <Image
+                    src="/images/static/logos/logo-megaplywoodindonesia.png"
+                    alt="MegaPlywood Indonesia"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   MEGA PLYWOOD

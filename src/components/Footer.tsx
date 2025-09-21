@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { MessageCircle, Globe, MapPin, Clock, Briefcase } from 'lucide-react'
 
 export default function Footer() {
@@ -39,8 +40,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-gray-800 to-black rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">MP</span>
+              <div className="w-12 h-12 relative">
+                <Image
+                  src="/images/static/logos/logo-megaplywoodindonesia.png"
+                  alt="MegaPlywood Indonesia"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold">MEGA PLYWOOD</h3>

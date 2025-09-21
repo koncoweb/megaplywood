@@ -63,7 +63,7 @@ export default function HomePage() {
               <span className="block text-black">INDONESIA</span>
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-800 max-w-4xl">
-              MegaPlywood supplies high-quality Indonesian plywood, MDF, HPL, veneer, and flooring for construction, interiors, and manufacturing. Competitive pricing, complete stock, and fast nationwide and worldwide delivery.
+              Mega Plywood Indonesia, a manufacture and supplier of quality plywood from Indonesia to all the world. Get competitive prices for collaborate a long term Business
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
             <Link
