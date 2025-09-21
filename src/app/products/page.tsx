@@ -5,16 +5,16 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Complete Plywood Products - Indonesian Plywood Collection | MegaPlywood Indonesia',
-  description: 'Complete collection of Indonesian plywood products: Softwood, Meranti, Filmface, Blockboard, Melamine, and Three Layers Panel. JAS, EN, IHPA 1997 compliant plywood for all construction and furniture needs.',
+  description: 'Complete collection of Indonesian plywood products: Albasia Plywood, Hardwood Plywood, Filmface, Blockboard, Combine Plywood, and Three Layer. JAS, EN, IHPA 1997 compliant plywood for all construction and furniture needs.',
   keywords: [
     'indonesian plywood products', 'softwood plywood', 'meranti plywood', 'filmface plywood', 
-    'blockboard plywood', 'melamine plywood', 'three layers panel', 'premium plywood indonesia', 
+    'blockboard plywood', 'three layers panel', 'premium plywood indonesia', 
     'construction plywood', 'furniture plywood', 'high quality plywood', 'plywood distributor',
     'JAS compliant plywood', 'EN standard plywood', 'IHPA 1997 plywood', 'plywood supplier'
   ],
   openGraph: {
     title: 'Complete Indonesian Plywood Products Collection',
-    description: 'Complete range of Indonesian plywood products including Softwood, Meranti, Filmface, Blockboard, Melamine, and Three Layers Panel. JAS, EN, IHPA 1997 compliant.',
+    description: 'Complete range of Indonesian plywood products including Albasia Plywood, Hardwood Plywood, Filmface, Blockboard, Combine Plywood, and Three Layer. JAS, EN, IHPA 1997 compliant.',
     type: 'website',
     images: [
       {
@@ -44,8 +44,6 @@ export default function ProductsPage() {
     // Special cases to match homepage links exactly
     if (name.includes('filmface')) return 'film-faced-plywood'
     if (name.includes('blockboard')) return 'blockboard-plywood'
-    if (name.includes('melamine-plywood')) return 'melamine-polyester-plywood'
-    if (name.includes('melamine-laminate')) return 'melamine-laminate-plywood'
     if (name.includes('meranti-plywood') && !name.includes('combine')) return 'meranti-plywood'
     if (name.includes('meranti-combine')) return 'meranti-combine-plywood'
     if (name.includes('three-layers-panel')) return 'three-layers-panel'
@@ -56,15 +54,15 @@ export default function ProductsPage() {
 
   const products = [
     {
-      name: 'Softwood Plywood',
-      subtitle: 'Albasia/Falcata Based Plywood',
-      description: 'High-quality softwood plywood made from Albasia and Falcata wood, perfect for construction and general building applications with excellent cost-effectiveness.',
+      name: 'Albasia Plywood (Softwood)',
+      subtitle: 'Albasia Based Plywood',
+      description: 'High-quality softwood plywood made from Albasia wood, perfect for construction and general building applications with excellent cost-effectiveness.',
       features: [
-        'Face/Back: Albasia/Falcata',
-        'Core: Albasia/Falcata',
-        'Glue: MR-Glue, E0, E1, WBP Phenol',
-        'Grade: BBCC & UTY Better',
-        'Thickness: 3, 4, 6, 8, 9, 12, 15, 18 mm'
+        'Board Size: Thick x 1220 x 2440 mm',
+        'Face/Back: Albasia',
+        'Core: Albasia',
+        'Glue: MR Standard, CARB',
+        'Grade: UTY Better'
       ],
       benefits: [
         'Cost-effective solution for large projects',
@@ -80,15 +78,15 @@ export default function ProductsPage() {
       image: '/images/static/products/indonesian-softwood-plywood-distributor.png'
     },
     {
-      name: 'Indonesian Full Meranti Plywood',
-      subtitle: 'Premium Meranti Wood Plywood',
-      description: 'Premium quality plywood made entirely from Meranti wood, offering superior strength and natural beauty for high-end applications.',
+      name: 'Hardwood Plywood',
+      subtitle: 'Premium Hardwood Plywood',
+      description: 'Premium quality hardwood plywood made from Meranti and Keruing with mixed hardwood cores for superior strength.',
       features: [
-        'Face/Back: Meranti',
-        'Core: Meranti',
-        'Glue: MR-Glue, E0, E1, WBP Phenol',
-        'Grade: BBCC & UTY Better',
-        'Thickness: 6, 9, 12, 15, 18 mm'
+        'Board Size: Thick x 1220 x 2440 mm',
+        'Face/Back: Meranti, Keruing',
+        'Core: Mix Mahogany, Cadamba',
+        'Glue: MR Standard, WBP Phenol, CARB',
+        'Grade: UTY Better'
       ],
       benefits: [
         'Dense, solid core for maximum strength',
@@ -104,15 +102,15 @@ export default function ProductsPage() {
       image: '/images/static/products/indonesian-meranti-plywood-distributor.png'
     },
     {
-      name: 'Indonesia Filmface Plywood',
-      subtitle: 'Phenolic Film Coated Plywood',
-      description: 'High-performance plywood with phenolic film coating, ideal for concrete formwork and construction applications requiring smooth surfaces.',
+      name: 'Filmface',
+      subtitle: 'Film Coated Plywood',
+      description: 'High-quality plywood with film coating for superior surface finish and durability, perfect for construction and furniture applications.',
       features: [
-        'Face/Back: Phenolic Film',
-        'Core: Albasia, Falcata, Cadamba, Mahogany',
-        'Glue: WBP Phenol Bonding',
-        'Grade: BBCC',
-        'Thickness: 12, 15, 18 mm'
+        'Board Size: Thick x 1220 x 2440 mm',
+        'Face/Back: Film',
+        'Core: Mix Mahogany, Cadamba, Rubber Wood',
+        'Glue: WBP Phenol',
+        'Grade: UTY Better'
       ],
       benefits: [
         'Smooth, non-stick surface',
@@ -128,15 +126,15 @@ export default function ProductsPage() {
       image: '/images/static/products/indonesian-film-faced-plywood-distributor.png'
     },
     {
-      name: 'Indonesia Blockboard Hevea Plywood',
-      subtitle: 'Hevea Core Blockboard',
-      description: 'Specialized blockboard with Hevea core, combining strength and stability for furniture and construction applications.',
+      name: 'Blockboard',
+      subtitle: 'Block Core Plywood',
+      description: 'Premium blockboard plywood with solid wood core, offering excellent strength and stability for furniture and construction applications.',
       features: [
-        'Face/Back: Albasia/Falcata, Meranti, Mahogany',
-        'Core: Albasia/Falcata',
-        'Glue: MR-Glue, E0, E1, WBP Phenol',
-        'Grade: BBCC & UTY Better',
-        'Thickness: 15, 18 mm'
+        'Board Size: Thick x 1220 x 2440 mm',
+        'Face/Back: Albasia, Meranti',
+        'Core: Albasia',
+        'Glue: MR Standard',
+        'Grade: UTY Better'
       ],
       benefits: [
         'Excellent dimensional stability',
@@ -152,63 +150,15 @@ export default function ProductsPage() {
       image: '/images/static/products/indonesian-blockboard-plywood-distributor.png'
     },
     {
-      name: 'Indonesian Melamine Polyester Plywood',
-      subtitle: 'Polyester Coated Melamine Plywood',
-      description: 'Premium melamine plywood with polyester coating, offering excellent surface finish and durability for furniture and interior applications.',
-      features: [
-        'Face/Back: Polyester Doff/Glossy Coating',
-        'Core: Albasia, Falcata, Cadamba, Mahogany',
-        'Glue: MR-Glue, E0, E1, WBP Phenol',
-        'Grade: BBCC & UTY Better',
-        'Thickness: 3, 6, 9, 12, 15, 18 mm'
-      ],
-      benefits: [
-        'Superior surface finish',
-        'Scratch and stain resistant',
-        'Easy to clean and maintain',
-        'Wide range of thickness options'
-      ],
-      applications: ['Furniture Manufacturing', 'Interior Design', 'Cabinet Making', 'Decorative Paneling'],
-      icon: Award,
-      color: 'from-indigo-600 to-indigo-800',
-      bgColor: 'bg-indigo-50',
-      borderColor: 'border-indigo-200',
-      image: '/images/static/products/indonesian-melamine-polyester-plywood-distributor.png'
-    },
-    {
-      name: 'Indonesian Melamine Laminate Plywood',
-      subtitle: 'Melamine Film Laminate Plywood',
-      description: 'High-quality melamine laminate plywood with film coating, perfect for furniture manufacturing and interior design applications.',
-      features: [
-        'Face/Back: Melamine Film Doff/Glossy',
-        'Core: Albasia, Falcata, Cadamba, Mahogany',
-        'Glue: MR-Glue, E0, E1, WBP Phenol',
-        'Grade: BBCC & UTY Better',
-        'Thickness: 6, 9, 12, 15, 18 mm'
-      ],
-      benefits: [
-        'Durable melamine surface',
-        'Wide variety of colors and patterns',
-        'Cost-effective decorative solution',
-        'Easy installation and maintenance'
-      ],
-      applications: ['Furniture Manufacturing', 'Kitchen Cabinets', 'Office Furniture', 'Interior Design'],
-      icon: Zap,
-      color: 'from-red-600 to-red-800',
-      bgColor: 'bg-red-50',
-      borderColor: 'border-red-200',
-      image: '/images/static/products/indonesian-melamine-laminate-plywood-distributor.png'
-    },
-    {
-      name: 'Meranti Combine Plywood',
+      name: 'Combine Plywood',
       subtitle: 'Mixed Wood Core Plywood',
-      description: 'Versatile plywood combining Meranti face with mixed wood cores, offering excellent value and performance for various applications.',
+      description: 'Versatile plywood combining Meranti and Keruing face with mixed wood cores, offering excellent value and performance.',
       features: [
-        'Face/Back: Meranti',
-        'Core: Meranti, Albasia/Falcata, Cadamba, Mahogany',
-        'Glue: MR-Glue, E0, E1, WBP Phenol',
-        'Grade: BBCC & UTY Better',
-        'Thickness: 3, 4, 6, 8, 9, 12, 15, 18 mm'
+        'Board Size: Thick x 1220 x 2440 mm',
+        'Face/Back: Meranti, Keruing',
+        'Core: Mix Albasia, Mahogany',
+        'Glue: MR Standard, CARB',
+        'Grade: UTY Better'
       ],
       benefits: [
         'Excellent value for money',
@@ -218,21 +168,21 @@ export default function ProductsPage() {
       ],
       applications: ['General Construction', 'Furniture Making', 'Interior Design', 'Packaging'],
       icon: Leaf,
-      color: 'from-teal-600 to-teal-800',
-      bgColor: 'bg-teal-50',
-      borderColor: 'border-teal-200',
+      color: 'from-emerald-600 to-emerald-800',
+      bgColor: 'bg-emerald-50',
+      borderColor: 'border-emerald-200',
       image: '/images/static/products/indonesian-meranti-combine-plywood-distributor.png'
     },
     {
-      name: 'Three Layers Panel',
-      subtitle: 'Structural Three-Layer Panel',
-      description: 'Heavy-duty three-layer structural panel designed for load-bearing applications and construction projects requiring maximum strength.',
+      name: 'Three Layer',
+      subtitle: 'Three Layer Construction Plywood',
+      description: 'Specialized three-layer panel plywood with cross-laminated core construction, offering superior strength and dimensional stability.',
       features: [
-        'Face/Back: Meranti',
-        'Core: Albasia Wood',
-        'Glue: MR-Glue, E1 Glue',
-        'Grade: BBCC & UTY Better',
-        'Thickness: 36, 44 mm'
+        'Board Size: Thick x 1220 x 2440 mm',
+        'Face/Back: Meranti, Keruing, Albasia',
+        'Bare Core: Albasia',
+        'Glue: MR Standard',
+        'Grade: UTY Better'
       ],
       benefits: [
         'Maximum structural strength',
@@ -241,7 +191,7 @@ export default function ProductsPage() {
         'Ideal for structural applications'
       ],
       applications: ['Structural Construction', 'Load Bearing Panels', 'Heavy Duty Furniture', 'Industrial Applications'],
-      icon: Shield,
+      icon: CheckCircle,
       color: 'from-gray-600 to-gray-800',
       bgColor: 'bg-gray-50',
       borderColor: 'border-gray-200',
@@ -289,8 +239,8 @@ export default function ProductsPage() {
               <span className="text-amber-600 font-semibold"> Meranti</span>, 
               <span className="text-blue-600 font-semibold"> Filmface</span>, 
               <span className="text-purple-600 font-semibold"> Blockboard</span>, 
-              <span className="text-indigo-600 font-semibold"> Melamine</span>, and 
-              <span className="text-gray-600 font-semibold"> Three Layers Panel</span>
+              and 
+              <span className="text-gray-600 font-semibold"> Three Layer</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -597,7 +547,7 @@ export default function ProductsPage() {
           <div className="text-gray-600 leading-relaxed" style={{ fontSize: '9px', lineHeight: '1.4' }}>
             <p className="mb-3">
               <strong>MegaPlywood Indonesia</strong> is a leading Indonesian plywood exporter specializing in high-quality plywood products distributed worldwide. 
-              Our comprehensive range includes Indonesian Meranti Plywood, Film-Faced Plywood, Meranti Combine Plywood, and Three Layers Panel, 
+              Our comprehensive range includes Hardwood Plywood, Filmface Plywood, Combine Plywood, and Three Layer, 
               manufactured to meet international standards including JAS, EN, and CE certifications.
             </p>
             
@@ -619,16 +569,16 @@ export default function ProductsPage() {
             </p>
             
             <p className="mb-3">
-              <strong>Indonesian Meranti Combine Plywood</strong> combines the best of both worlds by utilizing Meranti face and back veneers with 
+              <strong>Combine Plywood</strong> combines the best of both worlds by utilizing Meranti and Keruing face and back veneers with 
               lightweight core materials such as Falcata or Albasia. This innovative construction significantly reduces weight while maintaining 
-              the premium appearance and strength of Meranti plywood. The mixed-species core approach makes our Meranti Combine Plywood more 
+              the premium appearance and strength of hardwood plywood. The mixed-species core approach makes our Combine Plywood more 
               cost-effective and easier to handle, transport, and install compared to full Meranti plywood. This makes it particularly suitable 
               for interior applications, furniture manufacturing, cabinetry, and projects where weight reduction is crucial without compromising 
               on quality and appearance.
             </p>
             
             <p className="mb-3">
-              <strong>Indonesian Three Layers Panel</strong> represents advanced engineered wood technology, constructed with three distinct solid 
+              <strong>Three Layer</strong> represents advanced engineered wood technology, constructed with three distinct solid 
               wood layers featuring cross-laminated core construction. Unlike traditional plywood made from thin veneers, our three-layers panel 
               utilizes solid wood boards with perpendicular grain orientation in the core layer, providing enhanced dimensional stability and 
               structural integrity. This construction method minimizes warping, twisting, and cupping while offering the natural beauty and 

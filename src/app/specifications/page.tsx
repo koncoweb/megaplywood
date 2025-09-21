@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Indonesia Plywood Specifications - Technical Details & Standards | MegaPlywood',
-  description: 'Complete Indonesia plywood specifications including Softwood, Meranti, Filmface, Blockboard, Melamine, and Three Layers Panel. JAS, EN, IHPA 1997, and JPIC compliant plywood from MegaPlywood Indonesia.',
+  description: 'Complete Indonesia plywood specifications including Albasia Plywood, Hardwood Plywood, Filmface, Blockboard, Combine Plywood, and Three Layer. JAS, EN, IHPA 1997, and JPIC compliant plywood from MegaPlywood Indonesia.',
   keywords: [
     'indonesia plywood specifications', 'plywood technical specifications', 'meranti plywood specs',
     'softwood plywood specifications', 'filmface plywood specs', 'blockboard specifications',
-    'melamine plywood specs', 'JAS compliant plywood', 'EN standard plywood', 'IHPA 1997 plywood',
+    'JAS compliant plywood', 'EN standard plywood', 'IHPA 1997 plywood',
     'JPIC plywood standards', 'indonesian plywood grades', 'plywood thickness specifications'
   ],
   openGraph: {
@@ -29,131 +29,87 @@ export const metadata: Metadata = {
 export default function SpecificationsPage() {
   const plywoodTypes = [
     {
-      name: 'Softwood Plywood',
-      subtitle: 'Albasia/Falcata Based Plywood',
-      description: 'High-quality softwood plywood made from Albasia and Falcata wood, perfect for construction and general building applications.',
+      name: 'Albasia Plywood (Softwood)',
+      subtitle: 'Albasia Based Plywood',
+      description: 'High-quality softwood plywood made from Albasia wood, perfect for construction and general building applications.',
       specifications: [
-        { name: 'Face/Back', value: 'Albasia/ Falcata' },
-        { name: 'Short/Longcore', value: 'Albasia/ Falcata' },
-        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
-        { name: 'Grade', value: 'BBCC & UTY Better' },
-        { name: 'Packing Export', value: 'Pallete' },
-        { name: 'Board Size', value: '1220 x 2440 mm' },
-        { name: 'Thickness Type', value: '3, 4, 6, 8, 9, 12, 15, 18 mm' }
+        { name: 'Board Size', value: 'Thick x 1220 x 2440 mm' },
+        { name: 'Face/Back', value: 'Albasia' },
+        { name: 'Core', value: 'Albasia' },
+        { name: 'Glue', value: 'MR Standard, CARB' },
+        { name: 'Grade', value: 'UTY Better' }
       ],
       icon: TreePine,
       color: 'from-green-600 to-green-800'
     },
     {
-      name: 'Indonesian Full Meranti Plywood',
-      subtitle: 'Premium Meranti Wood Plywood',
-      description: 'Premium quality plywood made entirely from Meranti wood, offering superior strength and natural beauty for high-end applications.',
+      name: 'Hardwood Plywood',
+      subtitle: 'Premium Hardwood Plywood',
+      description: 'Premium quality hardwood plywood made from Meranti and Keruing with mixed hardwood cores for superior strength.',
       specifications: [
-        { name: 'Face/Back', value: 'Meranti' },
-        { name: 'Short/Longcore', value: 'Meranti' },
-        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
-        { name: 'Grade', value: 'BBCC & UTY Better' },
-        { name: 'Packing Export', value: 'Pallete' },
-        { name: 'Board Size', value: '1220 x 2440 mm' },
-        { name: 'Thickness Type', value: '6, 9, 12, 15, 18 mm' }
+        { name: 'Board Size', value: 'Thick x 1220 x 2440 mm' },
+        { name: 'Face/Back', value: 'Meranti, Keruing' },
+        { name: 'Core', value: 'Mix Mahogany, Cadamba' },
+        { name: 'Glue', value: 'MR Standard, WBP Phenol, CARB' },
+        { name: 'Grade', value: 'UTY Better' }
       ],
       icon: Star,
       color: 'from-amber-600 to-amber-800'
     },
     {
-      name: 'Indonesia Filmface Plywood',
-      subtitle: 'Phenolic Film Coated Plywood',
-      description: 'High-performance plywood with phenolic film coating, ideal for concrete formwork and construction applications requiring smooth surfaces.',
+      name: 'Filmface',
+      subtitle: 'Film Coated Plywood',
+      description: 'High-quality plywood with film coating for superior surface finish and durability, perfect for construction and furniture applications.',
       specifications: [
-        { name: 'Face/Back', value: 'Phenolic Film Face/Back' },
-        { name: 'Core', value: 'Albasia Falcata, Cadamba, Mahogany' },
-        { name: 'Glue', value: 'WBP Phenol (Bonding Layer)' },
-        { name: 'Grade', value: 'BBCC' },
-        { name: 'Packing Export', value: 'Pallete' },
-        { name: 'Board Size', value: '1220 x 2440 mm' },
-        { name: 'Thickness Type', value: '12, 15, 18 mm' }
+        { name: 'Board Size', value: 'Thick x 1220 x 2440 mm' },
+        { name: 'Face/Back', value: 'Film' },
+        { name: 'Core', value: 'Mix Mahogany, Cadamba, Rubber Wood' },
+        { name: 'Glue', value: 'WBP Phenol' },
+        { name: 'Grade', value: 'UTY Better' }
       ],
       icon: Shield,
       color: 'from-blue-600 to-blue-800'
     },
     {
-      name: 'Indonesia Blockboard Hevea Plywood',
-      subtitle: 'Hevea Core Blockboard',
-      description: 'Specialized blockboard with Hevea core, combining strength and stability for furniture and construction applications.',
+      name: 'Blockboard',
+      subtitle: 'Block Core Plywood',
+      description: 'Premium blockboard plywood with solid wood core, offering excellent strength and stability for furniture and construction applications.',
       specifications: [
-        { name: 'Face/Back', value: 'Albasia/Falcata, Meranti, Mahogany' },
-        { name: 'Core', value: 'Albasia/Falcata' },
-        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
-        { name: 'Grade', value: 'BBCC & UTY Better' },
-        { name: 'Packing Export', value: 'Pallete' },
-        { name: 'Board Size', value: '1220 x 2440 mm' },
-        { name: 'Thickness Type', value: '15, 18 mm' }
+        { name: 'Board Size', value: 'Thick x 1220 x 2440 mm' },
+        { name: 'Face/Back', value: 'Albasia, Meranti' },
+        { name: 'Core', value: 'Albasia' },
+        { name: 'Glue', value: 'MR Standard' },
+        { name: 'Grade', value: 'UTY Better' }
       ],
       icon: Package,
       color: 'from-purple-600 to-purple-800'
     },
     {
-      name: 'Indonesian Melamine Polyester Plywood',
-      subtitle: 'Polyester Coated Melamine Plywood',
-      description: 'Premium melamine plywood with polyester coating, offering excellent surface finish and durability for furniture and interior applications.',
-      specifications: [
-        { name: 'Face/Back', value: 'Polyester Doff Coating, Polyester Glossy Coating' },
-        { name: 'Short/Longcore', value: 'Albasia Falcata, Cadamba, Mahogany' },
-        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
-        { name: 'Grade', value: 'BBCC & UTY Better' },
-        { name: 'Packing Export', value: 'Pallete' },
-        { name: 'Board Size', value: '1220 x 2440 mm' },
-        { name: 'Thickness Type', value: '3, 6, 9, 12, 15, 18 mm' }
-      ],
-      icon: Award,
-      color: 'from-indigo-600 to-indigo-800'
-    },
-    {
-      name: 'Indonesian Melamine Laminate Plywood',
-      subtitle: 'Melamine Film Laminate Plywood',
-      description: 'High-quality melamine laminate plywood with film coating, perfect for furniture manufacturing and interior design applications.',
-      specifications: [
-        { name: 'Face/Back', value: 'Melamine Film Doff Coating, Melamine Film Glossy Coating' },
-        { name: 'Short/Longcore', value: 'Albasia Falcata, Cadamba, Mahogany' },
-        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
-        { name: 'Grade', value: 'BBCC & UTY Better' },
-        { name: 'Packing Export', value: 'Pallete' },
-        { name: 'Board Size', value: '1220 x 2440 mm' },
-        { name: 'Thickness Type', value: '6, 9, 12, 15, 18 mm' }
-      ],
-      icon: Zap,
-      color: 'from-red-600 to-red-800'
-    },
-    {
-      name: 'Meranti Combine Plywood',
+      name: 'Combine Plywood',
       subtitle: 'Mixed Wood Core Plywood',
-      description: 'Versatile plywood combining Meranti face with mixed wood cores, offering excellent value and performance for various applications.',
+      description: 'Versatile plywood combining Meranti and Keruing face with mixed wood cores, offering excellent value and performance.',
       specifications: [
-        { name: 'Face/Back', value: 'Meranti' },
-        { name: 'Short/Longcore', value: 'Meranti, Albasia/Falcata, Cadamba, Mahogany' },
-        { name: 'Glue', value: 'MR-Glue, E0, E1, WBP Phenol Glue' },
-        { name: 'Grade', value: 'BBCC & UTY Better' },
-        { name: 'Packing Export', value: 'Pallete' },
-        { name: 'Board Size', value: '1220 x 2440 mm' },
-        { name: 'Thickness Type', value: '3, 4, 6, 8, 9, 12, 15, 18 mm' }
+        { name: 'Board Size', value: 'Thick x 1220 x 2440 mm' },
+        { name: 'Face/Back', value: 'Meranti, Keruing' },
+        { name: 'Core', value: 'Mix Albasia, Mahogany' },
+        { name: 'Glue', value: 'MR Standard, CARB' },
+        { name: 'Grade', value: 'UTY Better' }
       ],
       icon: Leaf,
-      color: 'from-teal-600 to-teal-800'
+      color: 'from-emerald-600 to-emerald-800'
     },
     {
-      name: 'Three Layers Panel',
-      subtitle: 'Structural Three-Layer Panel',
-      description: 'Heavy-duty three-layer structural panel designed for load-bearing applications and construction projects requiring maximum strength.',
+      name: 'Three Layer',
+      subtitle: 'Three Layer Construction Plywood',
+      description: 'Specialized three-layer panel plywood with cross-laminated core construction, offering superior strength and dimensional stability.',
       specifications: [
-        { name: 'Face/Back', value: 'Meranti' },
-        { name: 'Core', value: 'Albasia Wood' },
-        { name: 'Glue', value: 'MR-Glue, E1 Glue' },
-        { name: 'Grade', value: 'BBCC & UTY Better' },
-        { name: 'Packing Export', value: 'Pallete' },
-        { name: 'Board Size', value: '1220 x 2440 mm' },
-        { name: 'Thickness Type', value: '36, 44 mm' }
+        { name: 'Board Size', value: 'Thick x 1220 x 2440 mm' },
+        { name: 'Face/Back', value: 'Meranti, Keruing, Albasia' },
+        { name: 'Bare Core', value: 'Albasia' },
+        { name: 'Glue', value: 'MR Standard' },
+        { name: 'Grade', value: 'UTY Better' }
       ],
-      icon: Shield,
+      icon: CheckCircle,
       color: 'from-gray-600 to-gray-800'
     }
   ]

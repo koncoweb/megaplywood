@@ -88,7 +88,7 @@ export function getFeaturedImageUrl(post: BlogPost): string {
   const defaultImages = {
     'plywood': '/images/static/products/indonesian-meranti-plywood-distributor.png',
     'construction': '/images/static/gallery/packaging-min.jpeg',
-    'furniture': '/images/static/products/indonesian-melamine-plywood-distributor.png',
+    'furniture': '/images/static/products/indonesian-blockboard-plywood-distributor.png',
     'default': '/images/static/hero/megaplywood-indonesian-plywood-sml.png'
   }
   

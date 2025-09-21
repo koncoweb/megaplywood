@@ -63,7 +63,7 @@ export default function HomePage() {
               <span className="block text-black">INDONESIA</span>
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-800 max-w-4xl">
-              Mega Plywood Indonesia, a manufacture and supplier of quality plywood from Indonesia to all the world. Get competitive prices for collaborate a long term Business
+              Mega Plywood Indonesia, a manufacturer and supplier of high-quality plywood from Indonesia to the world. Get competitive prices and collaborate for long-term business partnerships.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -262,12 +262,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {/* Softwood Plywood */}
+            {/* Albasia Plywood (Softwood) */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/images/static/products/indonesian-softwood-plywood-distributor.png"
-                  alt="Indonesian Softwood Plywood"
+                  alt="Indonesian Albasia Plywood (Softwood)"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
@@ -277,7 +277,7 @@ export default function HomePage() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
-                  Softwood Plywood
+                  Albasia Plywood (Softwood)
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">
                   High-quality Albasia/Falcata based plywood perfect for construction and general building applications.
@@ -390,76 +390,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Melamine Polyester Plywood */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/images/static/products/indonesian-melamine-polyester-plywood-distributor.png"
-                  alt="Indonesian Melamine Polyester Plywood"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                <div className="absolute top-4 right-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  Premium
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
-                  Melamine Polyester
-                </h3>
-                <p className="text-sm text-gray-600 mb-4">
-                  Premium melamine plywood with polyester coating, offering excellent surface finish and durability.
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">Interior Grade</span>
-                  <Link
-                    href="/products#melamine-polyester-plywood"
-                    className="text-indigo-600 hover:text-indigo-700 font-semibold text-sm transition-colors"
-                  >
-                    Learn More →
-                  </Link>
-                </div>
-              </div>
-            </div>
 
-            {/* Melamine Laminate Plywood */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/images/static/products/indonesian-melamine-laminate-plywood-distributor.png"
-                  alt="Indonesian Melamine Laminate Plywood"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  Decorative
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
-                  Melamine Laminate
-                </h3>
-                <p className="text-sm text-gray-600 mb-4">
-                  High-quality melamine laminate plywood with film coating, perfect for furniture manufacturing.
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">Furniture Grade</span>
-                  <Link
-                    href="/products#melamine-laminate-plywood"
-                    className="text-red-600 hover:text-red-700 font-semibold text-sm transition-colors"
-                  >
-                    Learn More →
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Meranti Combine Plywood */}
+            {/* Combine Plywood */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/images/static/products/indonesian-meranti-combine-plywood-distributor.png"
-                  alt="Indonesian Meranti Combine Plywood"
+                  alt="Indonesian Combine Plywood"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
@@ -469,7 +406,7 @@ export default function HomePage() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">
-                  Meranti Combine
+                  Combine Plywood
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">
                   Versatile plywood combining Meranti face with mixed wood cores, offering excellent value and performance.
@@ -486,12 +423,12 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Three Layers Panel */}
+            {/* Three Layer */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/images/static/products/indonesian-three-layers-panel-plywood-distributor.png"
-                  alt="Indonesian Three Layers Panel"
+                  alt="Indonesian Three Layer"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
@@ -501,7 +438,7 @@ export default function HomePage() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-600 transition-colors">
-                  Three Layers Panel
+                  Three Layer
                 </h3>
                 <p className="text-sm text-gray-600 mb-4">
                   Heavy-duty three-layer structural panel designed for load-bearing applications and construction projects.
