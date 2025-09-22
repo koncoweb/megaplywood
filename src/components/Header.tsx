@@ -53,7 +53,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-5">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.submenu ? (
@@ -70,7 +70,7 @@ export default function Header() {
                   >
                     <Link
                       href={item.href}
-                      className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
+                      className="text-gray-700 hover:text-black px-2 py-2 text-[13px] font-semibold tracking-tight transition-colors duration-200 flex items-center"
                     >
                       {item.name}
                       <ChevronDown className="w-4 h-4 ml-1" />
@@ -81,7 +81,7 @@ export default function Header() {
                           <Link
                             key={subItem.name}
                             href={subItem.href}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-black transition-colors"
+                            className="block px-4 py-2 text-[13px] tracking-tight text-gray-700 hover:bg-gray-100 hover:text-black transition-colors"
                           >
                             {subItem.name}
                           </Link>
@@ -92,13 +92,13 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className={`px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center ${
+                    className={`px-2 py-2 text-[13px] font-semibold tracking-tight transition-colors duration-200 flex items-center ${
                       item.name === 'Portofolios' 
                         ? 'text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-lg border border-blue-200' 
                         : 'text-gray-700 hover:text-black'
                     }`}
                   >
-                    {item.icon && <item.icon className="w-4 h-4 mr-2" />}
+                    {item.icon && <item.icon className="w-4 h-4 mr-1" />}
                     {item.name}
                   </Link>
                 )}
