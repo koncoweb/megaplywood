@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ChevronDown, Briefcase } from 'lucide-react'
+import { Menu, X, ChevronDown, Briefcase, Phone, Mail } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,8 +25,8 @@ export default function Header() {
     { name: 'Free Samples', href: '/samples' },
     { name: 'About Us', href: '/about' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Call Us', href: 'tel:+6285640012454' },
-    { name: 'Email', href: 'mailto:info@megaplywoodindonesia.com' },
+    { name: 'Call Us', href: 'tel:+6285640012454', icon: Phone },
+    { name: 'Email', href: 'mailto:info@megaplywoodindonesia.com', icon: Mail },
   ]
 
   return (
