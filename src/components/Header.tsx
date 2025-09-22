@@ -26,7 +26,7 @@ export default function Header() {
     { name: 'About Us', href: '/about' },
     { name: 'Contact', href: '/contact' },
     { name: 'Call Us', href: 'tel:+6285640012454' },
-    { name: 'Email', href: 'mailto:sales@megaplywood.id' },
+    { name: 'Email', href: 'mailto:info@megaplywoodindonesia.com' },
   ]
 
   return (

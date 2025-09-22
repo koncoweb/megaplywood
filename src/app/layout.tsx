@@ -107,7 +107,7 @@ export default function RootLayout({
                   contactType: 'sales',
                   areaServed: 'ID',
                   availableLanguage: ['id', 'en'],
-                  email: 'sales@megaplywood.id'
+                  email: 'info@megaplywoodindonesia.com'
                 }
               ]
             })
