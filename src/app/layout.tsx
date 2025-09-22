@@ -90,6 +90,29 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={inter.className}>
+        {/* Organization JSON-LD with contactPoint for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'MegaPlywood Indonesia',
+              url: 'https://megaplywood.id',
+              logo: 'https://megaplywood.id/favicon.ico',
+              contactPoint: [
+                {
+                  '@type': 'ContactPoint',
+                  telephone: '+62-856-4001-2454',
+                  contactType: 'sales',
+                  areaServed: 'ID',
+                  availableLanguage: ['id', 'en'],
+                  email: 'sales@megaplywood.id'
+                }
+              ]
+            })
+          }}
+        />
         <Header />
         <main className="min-h-screen">
           {children}

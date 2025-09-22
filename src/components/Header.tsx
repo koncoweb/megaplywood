@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, ChevronDown, Briefcase } from 'lucide-react'
@@ -8,14 +8,15 @@ import { Menu, X, ChevronDown, Briefcase } from 'lucide-react'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isProductsOpen, setIsProductsOpen] = useState(false)
+  const productsHoverTimeout = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Plywood History', href: '/history' },
     { 
       name: 'Our Products', 
       href: '/products',
       submenu: [
+        { name: 'Plywood History', href: '/history' },
         { name: 'Specifications', href: '/specifications' },
         { name: 'Services', href: '/services' }
       ]
@@ -24,6 +25,8 @@ export default function Header() {
     { name: 'Free Samples', href: '/samples' },
     { name: 'About Us', href: '/about' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Call Us', href: 'tel:+6285640012454' },
+    { name: 'Email', href: 'mailto:sales@megaplywood.id' },
   ]
 
   return (
@@ -56,8 +59,14 @@ export default function Header() {
                 {item.submenu ? (
                   <div 
                     className="relative"
-                    onMouseEnter={() => setIsProductsOpen(true)}
-                    onMouseLeave={() => setIsProductsOpen(false)}
+                    onMouseEnter={() => {
+                      if (productsHoverTimeout.current) clearTimeout(productsHoverTimeout.current)
+                      setIsProductsOpen(true)
+                    }}
+                    onMouseLeave={() => {
+                      if (productsHoverTimeout.current) clearTimeout(productsHoverTimeout.current)
+                      productsHoverTimeout.current = setTimeout(() => setIsProductsOpen(false), 250)
+                    }}
                   >
                     <Link
                       href={item.href}
