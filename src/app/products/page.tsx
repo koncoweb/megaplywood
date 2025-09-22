@@ -75,7 +75,7 @@ export default function ProductsPage() {
       color: 'from-green-600 to-green-800',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200',
-      image: '/images/static/products/indonesian-softwood-plywood-distributor.png'
+      image: '/images/static/products/indonesian-albasia-plywood-distributor2.jpeg'
     },
     {
       name: 'Hardwood Plywood',
@@ -99,7 +99,7 @@ export default function ProductsPage() {
       color: 'from-amber-600 to-amber-800',
       bgColor: 'bg-amber-50',
       borderColor: 'border-amber-200',
-      image: '/images/static/products/indonesian-meranti-plywood-distributor.png'
+      image: '/images/static/products/indonesian-hardwood-meranti-plywood-distributor2.jpeg'
     },
     {
       name: 'Filmface',
@@ -123,7 +123,7 @@ export default function ProductsPage() {
       color: 'from-blue-600 to-blue-800',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
-      image: '/images/static/products/indonesian-film-faced-plywood-distributor.png'
+      image: '/images/static/products/indonesian-film-faced-plywood-distributor2.jpeg'
     },
     {
       name: 'Blockboard',
@@ -147,7 +147,7 @@ export default function ProductsPage() {
       color: 'from-purple-600 to-purple-800',
       bgColor: 'bg-purple-50',
       borderColor: 'border-purple-200',
-      image: '/images/static/products/indonesian-blockboard-plywood-distributor.png'
+      image: '/images/static/products/indonesian-blockboard-plywood-distributor2.jpeg'
     },
     {
       name: 'Combine Plywood',
@@ -195,7 +195,7 @@ export default function ProductsPage() {
       color: 'from-gray-600 to-gray-800',
       bgColor: 'bg-gray-50',
       borderColor: 'border-gray-200',
-      image: '/images/static/products/indonesian-three-layers-panel-plywood-distributor.png'
+      image: '/images/static/products/indonesian-three-layer-plywood-distributor2.jpeg'
     }
   ]
 

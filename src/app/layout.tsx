@@ -36,10 +36,16 @@ export const metadata: Metadata = {
     description: 'MegaPlywood Indonesia supplies high-quality plywood, MDF, HPL, veneer, and flooring with competitive pricing.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-images.png',
         width: 1200,
         height: 630,
         alt: 'MegaPlywood Indonesia - Distributor Plywood',
+      },
+      {
+        url: '/og-images.png',
+        width: 1200,
+        height: 1200,
+        alt: 'MegaPlywood Indonesia - Distributor Plywood (Square)',
       },
     ],
   },
@@ -47,7 +53,20 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MegaPlywood Indonesia - Trusted Plywood Distributor',
     description: 'MegaPlywood Indonesia supplies high-quality plywood, MDF, HPL, veneer, and flooring with competitive pricing.',
-    images: ['/og-image.jpg'],
+    images: [
+      {
+        url: '/og-images.png',
+        width: 1200,
+        height: 630,
+        alt: 'MegaPlywood Indonesia - Distributor Plywood',
+      },
+      {
+        url: '/og-images.png',
+        width: 1200,
+        height: 1200,
+        alt: 'MegaPlywood Indonesia - Distributor Plywood (Square)',
+      },
+    ],
   },
   verification: {
     google: 'your-google-verification-code',

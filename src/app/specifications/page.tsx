@@ -122,9 +122,9 @@ export default function SpecificationsPage() {
       icon: Award
     },
     {
-      standard: 'EN Standard',
-      title: 'European Norm Standards',
-      description: 'European Norm standards for construction materials',
+      standard: 'CARB Standard',
+      title: 'California Air Resources Board',
+      description: 'Independent verification that composite wood products, including plywood, meet very strict formaldehyde emission limits set by the State of California (USA). Ensures low-emitting, safe-to-use products that meet U.S. market requirements.',
       icon: Shield
     },
     {

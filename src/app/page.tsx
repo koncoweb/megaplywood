@@ -266,7 +266,7 @@ export default function HomePage() {
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/images/static/products/indonesian-softwood-plywood-distributor.png"
+                  src="/images/static/products/indonesian-albasia-plywood-distributor2.jpeg"
                   alt="Indonesian Albasia Plywood (Softwood)"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -298,7 +298,7 @@ export default function HomePage() {
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/images/static/products/indonesian-meranti-plywood-distributor.png"
+                  src="/images/static/products/indonesian-hardwood-meranti-plywood-distributor2.jpeg"
                   alt="Indonesian Meranti Plywood"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -330,7 +330,7 @@ export default function HomePage() {
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/images/static/products/indonesian-film-faced-plywood-distributor.png"
+                  src="/images/static/products/indonesian-film-faced-plywood-distributor2.jpeg"
                   alt="Indonesian Film-Faced Plywood"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -362,7 +362,7 @@ export default function HomePage() {
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/images/static/products/indonesian-blockboard-plywood-distributor.png"
+                  src="/images/static/products/indonesian-blockboard-plywood-distributor2.jpeg"
                   alt="Indonesian Blockboard Plywood"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -427,7 +427,7 @@ export default function HomePage() {
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/images/static/products/indonesian-three-layers-panel-plywood-distributor.png"
+                  src="/images/static/products/indonesian-three-layer-plywood-distributor2.jpeg"
                   alt="Indonesian Three Layer"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
