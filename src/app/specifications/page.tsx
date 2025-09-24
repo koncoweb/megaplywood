@@ -355,7 +355,7 @@ export default function SpecificationsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/6285640012454?text=Hi%20MegaPlywood%20Indonesia,%20I%20need%20custom%20plywood%20specifications%20for%20my%20project.%20Please%20provide%20more%20information."
+              href="https://wa.me/6282217118816?text=Hi%20MegaPlywood%20Indonesia,%20I%20need%20custom%20plywood%20specifications%20for%20my%20project.%20Please%20provide%20more%20information."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"

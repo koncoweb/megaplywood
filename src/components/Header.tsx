@@ -25,7 +25,7 @@ export default function Header() {
     { name: 'Free Samples', href: '/samples' },
     { name: 'About Us', href: '/about' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Call Us', href: 'tel:+6285640012454', icon: Phone },
+    { name: 'Call Us', href: 'tel:+6282217118816', icon: Phone },
     { name: 'Email', href: 'mailto:info@megaplywoodindonesia.com', icon: Mail },
   ]
 

@@ -250,7 +250,7 @@ export default function ProductsPage() {
                 Explore Products
               </Link>
               <a
-                href="https://wa.me/6285640012454?text=Hi%20MegaPlywood,%20I%20am%20interested%20in%20getting%20a%20quote%20and%20free%20sample%20for%20your%20plywood%20products.%20Please%20provide%20more%20information."
+                href="https://wa.me/6282217118816?text=Hi%20MegaPlywood,%20I%20am%20interested%20in%20getting%20a%20quote%20and%20free%20sample%20for%20your%20plywood%20products.%20Please%20provide%20more%20information."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-gray-600 hover:bg-gray-600 hover:text-white text-gray-600 px-8 py-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2"
@@ -347,7 +347,7 @@ export default function ProductsPage() {
 
                       <div className="flex justify-center">
                         <a
-                          href="https://wa.me/6285640012454?text=Hi%20MegaPlywood,%20I%20am%20interested%20in%20getting%20a%20quote%20and%20free%20sample%20for%20your%20plywood%20products.%20Please%20provide%20more%20information."
+                          href="https://wa.me/6282217118816?text=Hi%20MegaPlywood,%20I%20am%20interested%20in%20getting%20a%20quote%20and%20free%20sample%20for%20your%20plywood%20products.%20Please%20provide%20more%20information."
                           target="_blank"
                           rel="noopener noreferrer"
                           className={`bg-gradient-to-r ${product.color} hover:opacity-90 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 text-center transform hover:scale-105 flex items-center justify-center space-x-2`}
@@ -523,7 +523,7 @@ export default function ProductsPage() {
           
           <div className="flex justify-center">
             <a
-              href="https://wa.me/6285640012454?text=Hi%20MegaPlywood,%20I%20am%20interested%20in%20getting%20a%20quote%20and%20free%20sample%20for%20your%20plywood%20products.%20Please%20provide%20more%20information."
+              href="https://wa.me/6282217118816?text=Hi%20MegaPlywood,%20I%20am%20interested%20in%20getting%20a%20quote%20and%20free%20sample%20for%20your%20plywood%20products.%20Please%20provide%20more%20information."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-12 py-4 rounded-xl font-bold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-3"

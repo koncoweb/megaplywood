@@ -103,7 +103,7 @@ export default function RootLayout({
               contactPoint: [
                 {
                   '@type': 'ContactPoint',
-                  telephone: '+62-856-4001-2454',
+                  telephone: '+6282217118816',
                   contactType: 'sales',
                   areaServed: 'ID',
                   availableLanguage: ['id', 'en'],

@@ -2,15 +2,15 @@ import { Metadata } from 'next'
 import { MapPin, Clock, MessageCircle, Globe, Factory } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Contact MegaPlywood Indonesia - Phone +6285640012454 | WhatsApp & Production Locations',
-  description: 'Contact MegaPlywood Indonesia via WhatsApp +6285640012454 for plywood consultation. Visit our production locations in Central Java and East Java. Professional plywood distributor.',
+  title: 'Contact MegaPlywood Indonesia - Phone +6282217118816 | WhatsApp & Production Locations',
+  description: 'Contact MegaPlywood Indonesia via WhatsApp +6282217118816 for plywood consultation. Visit our production locations in Central Java and East Java. Professional plywood distributor.',
   keywords: [
-    'contact megaplywood indonesia', 'whatsapp megaplywood', 'phone +6285640012454', 
+    'contact megaplywood indonesia', 'whatsapp megaplywood', 'phone +6282217118816', 
     'plywood consultation indonesia', 'megaplywood production locations', 'central java plywood',
     'east java plywood', 'magelang plywood', 'banyumas plywood', 'batang plywood', 'pacitan plywood'
   ],
   openGraph: {
-    title: 'Contact MegaPlywood Indonesia - WhatsApp +6285640012454',
+    title: 'Contact MegaPlywood Indonesia - WhatsApp +6282217118816',
     description: 'Get in touch with MegaPlywood Indonesia via WhatsApp for plywood consultation. Production locations in Central Java and East Java.',
     type: 'website',
   },
@@ -21,7 +21,7 @@ export default function ContactPage() {
     {
       icon: MessageCircle,
       title: 'MEGAPLYWOOD INDONESIA PHONE & WHATSAPP',
-      details: ['+6285640012454'],
+      details: ['+6282217118816'],
       description: 'Contact Our WhatsApp - Connect Directly With Us by WhatsApp',
       whatsapp: true
     },
@@ -54,17 +54,17 @@ export default function ContactPage() {
   const departments = [
     {
       name: 'Sales & Marketing',
-      whatsapp: '+6285640012454',
+      whatsapp: '+6282217118816',
       description: 'Product consultation and sales via WhatsApp'
     },
     {
       name: 'Customer Service',
-      whatsapp: '+6285640012454',
+      whatsapp: '+6282217118816',
       description: 'Customer support and complaints via WhatsApp'
     },
     {
       name: 'Technical Support',
-      whatsapp: '+6285640012454',
+      whatsapp: '+6282217118816',
       description: 'Technical consultation and specifications via WhatsApp'
     },
     {
@@ -90,10 +90,10 @@ export default function ContactPage() {
             "@type": "Organization",
             "name": "MegaPlywood Indonesia",
             "url": "https://www.megaplywoodindonesia.com",
-            "telephone": "+6285640012454",
+            "telephone": "+6282217118816",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+6285640012454",
+              "telephone": "+6282217118816",
               "contactType": "customer service",
               "availableLanguage": ["Indonesian", "English"]
             },
@@ -186,12 +186,12 @@ export default function ContactPage() {
                       <div key={idx}>
                         {contact.whatsapp ? (
                           <a
-                            href={`https://wa.me/6285640012454?text=Hi%20MegaPlywood%20Indonesia,%20I%20am%20interested%20in%20your%20plywood%20products.%20Please%20provide%20more%20information%20and%20pricing.`}
+                            href={`https://wa.me/6282217118816?text=Hi%20MegaPlywood%20Indonesia,%20I%20am%20interested%20in%20your%20plywood%20products.%20Please%20provide%20more%20information%20and%20pricing.`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-green-600 font-bold text-lg hover:text-green-700 transition-colors duration-200 flex items-center justify-center space-x-2"
                             itemProp="telephone"
-                            content="+6285640012454"
+                            content="+6282217118816"
                           >
                             <MessageCircle className="w-5 h-5" />
                             <span>{detail}</span>
@@ -239,15 +239,15 @@ export default function ContactPage() {
               Connect Directly With Us by WhatsApp for instant consultation and support
             </p>
             <a
-              href="https://wa.me/6285640012454?text=Hi%20MegaPlywood%20Indonesia,%20I%20am%20interested%20in%20your%20plywood%20products.%20Please%20provide%20more%20information%20and%20pricing."
+              href="https://wa.me/6282217118816?text=Hi%20MegaPlywood%20Indonesia,%20I%20am%20interested%20in%20your%20plywood%20products.%20Please%20provide%20more%20information%20and%20pricing."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
               itemProp="telephone"
-              content="+6285640012454"
+              content="+6282217118816"
             >
               <MessageCircle className="w-6 h-6 mr-3" />
-              <span>WhatsApp +6285640012454</span>
+              <span>WhatsApp +6282217118816</span>
             </a>
             <div className="mt-6">
               <p className="text-sm text-gray-500">
@@ -452,12 +452,12 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   {dept.whatsapp ? (
                     <a
-                      href={`https://wa.me/6285640012454?text=Hi%20MegaPlywood%20Indonesia,%20I%20need%20assistance%20with%20${dept.name.toLowerCase().replace(/\s+/g, '%20')}.%20Please%20help%20me.`}
+                      href={`https://wa.me/6282217118816?text=Hi%20MegaPlywood%20Indonesia,%20I%20need%20assistance%20with%20${dept.name.toLowerCase().replace(/\s+/g, '%20')}.%20Please%20help%20me.`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-green-600 font-medium text-sm hover:text-green-700 transition-colors duration-200"
                       itemProp="telephone"
-                      content="+6285640012454"
+                      content="+6282217118816"
                     >
                       <MessageCircle className="w-4 h-4 mr-2" />
                       <span>{dept.whatsapp}</span>

@@ -304,14 +304,14 @@ export default function SamplesPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
               <a
-                href="https://wa.me/6285640012454?text=Hi%20MegaPlywood%20Indonesia,%20I%20would%20like%20to%20request%20free%20plywood%20samples.%20Please%20provide%20more%20information."
+                href="https://wa.me/6282217118816?text=Hi%20MegaPlywood%20Indonesia,%20I%20would%20like%20to%20request%20free%20plywood%20samples.%20Please%20provide%20more%20information."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-600 hover:text-green-700 font-medium transition-colors"
                 itemProp="telephone"
-                content="+6285640012454"
+                content="+6282217118816"
               >
-                +6285640012454
+                +6282217118816
               </a>
               <p className="text-sm text-gray-500">Available 24/7</p>
             </div>

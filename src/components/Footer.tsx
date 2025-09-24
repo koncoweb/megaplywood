@@ -14,7 +14,7 @@ export default function Footer() {
             "@type": "Organization",
             "name": "MegaPlywood Indonesia",
             "url": "https://www.megaplywoodindonesia.com",
-            "telephone": "+6285640012454",
+            "telephone": "+6282217118816",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Jalan Gajahmada Batang",
@@ -24,7 +24,7 @@ export default function Footer() {
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+6285640012454",
+              "telephone": "+6282217118816",
               "contactType": "customer service",
               "availableLanguage": ["Indonesian", "English"]
             },
@@ -130,14 +130,14 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-4 h-4 text-green-400 flex-shrink-0" />
                 <a
-                  href="https://wa.me/6285640012454?text=Hi%20MegaPlywood%20Indonesia,%20I%20am%20interested%20in%20your%20plywood%20products.%20Please%20provide%20more%20information."
+                  href="https://wa.me/6282217118816?text=Hi%20MegaPlywood%20Indonesia,%20I%20am%20interested%20in%20your%20plywood%20products.%20Please%20provide%20more%20information."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300 transition-colors font-medium"
                   itemProp="telephone"
-                  content="+6285640012454"
+                  content="+6282217118816"
                 >
-                  +6285640012454
+                  +6282217118816
                 </a>
               </div>
               <div className="flex items-center space-x-3">

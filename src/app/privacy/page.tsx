@@ -161,7 +161,7 @@ export default function PrivacyPolicyPage() {
                   </div>
                   <div className="flex items-center">
                     <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                    <span className="text-gray-700">Phone: +6285640012454</span>
+                    <span className="text-gray-700">Phone: +6282217118816</span>
                   </div>
                   <div className="flex items-start">
                     <div className="w-5 h-5 text-blue-600 mr-3 mt-0.5">📍</div>
