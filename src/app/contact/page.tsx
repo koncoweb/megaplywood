@@ -99,10 +99,7 @@ export default function ContactPage() {
             },
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Jalan Gajahmada Batang",
-              "addressLocality": "Batang",
-              "addressRegion": "Central Java",
-              "addressCountry": "Indonesia"
+              "streetAddress": "Alamat: Jalan Dr. Soetomo - Jalan Perbatasan Pekalongan – Batang KM. 1, Jawa Tengah"
             },
             "location": [
               {
@@ -392,7 +389,7 @@ export default function ContactPage() {
                 <div className="text-center">
                   <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
                   <p className="text-gray-600">Map Location</p>
-                  <p className="text-sm text-gray-500">Jalan Gajahmada Batang, Batang Regency, Central Java</p>
+                  <p className="text-sm text-gray-500">Alamat: Jalan Dr. Soetomo - Jalan Perbatasan Pekalongan – Batang KM. 1, Jawa Tengah</p>
                 </div>
               </div>
 
